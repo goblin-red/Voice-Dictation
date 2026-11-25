@@ -1,0 +1,933 @@
+{
+  "button_presets": [],
+  "button_preset_selection": {},
+  "mic_manual_levels": {},
+  "mic_manual_active": "",
+  "ui_language": "en",
+  "mic": true,
+  "dictation": "off",
+  "reading": "system",
+  "sound": {
+    "mic": "mac",
+    "mic_mode": "all",
+    "speech": "mac",
+    "echo": "auto"
+  },
+  "target": "smart",
+  "commands": {
+    "space": {
+      "enabled": true,
+      "words_en": [
+        "dumble bumble",
+        "bumble dumble"
+      ],
+      "parts_en": [
+        [
+          "dumble"
+        ],
+        [
+          "bumble"
+        ]
+      ]
+    },
+    "double": {
+      "enabled": true,
+      "words_en": [
+        "rumba"
+      ],
+      "parts_en": [
+        [
+          "rumba"
+        ],
+        []
+      ]
+    },
+    "enter": {
+      "enabled": true,
+      "words_en": [
+        "rex",
+        "reks",
+        "recs"
+      ],
+      "parts_en": [
+        [
+          "rex",
+          "reks",
+          "recs"
+        ],
+        []
+      ]
+    },
+    "enter2": {
+      "enabled": true,
+      "words_en": [
+        "madura",
+        "maduro"
+      ],
+      "parts_en": [
+        [
+          "madura",
+          "maduro"
+        ],
+        []
+      ]
+    },
+    "tab1": {
+      "enabled": true,
+      "words_en": [
+        "switch to terminal one",
+        "to terminal one switch",
+        "switch terminal one",
+        "terminal one switch",
+        "switch to terminal 1",
+        "to terminal 1 switch",
+        "terminal 1 switch",
+        "switch terminal 1",
+        "switch to first terminal",
+        "to first terminal switch",
+        "first terminal switch",
+        "switch first terminal",
+        "to terminal one",
+        "terminal one",
+        "to terminal 1",
+        "terminal 1",
+        "to first terminal",
+        "first terminal"
+      ],
+      "parts_en": [
+        [
+          "switch",
+          "-"
+        ],
+        [
+          "to terminal one",
+          "terminal one",
+          "to terminal 1",
+          "terminal 1",
+          "to first terminal",
+          "first terminal"
+        ]
+      ]
+    },
+    "tab2": {
+      "enabled": true,
+      "words_en": [
+        "switch to terminal two",
+        "to terminal two switch",
+        "terminal two switch",
+        "switch terminal two",
+        "to terminal 2 switch",
+        "switch to terminal 2",
+        "switch terminal 2",
+        "terminal 2 switch",
+        "switch to second terminal",
+        "to second terminal switch",
+        "switch second terminal",
+        "second terminal switch",
+        "to terminal two",
+        "terminal two",
+        "to terminal 2",
+        "terminal 2",
+        "to second terminal",
+        "second terminal"
+      ],
+      "parts_en": [
+        [
+          "switch",
+          "-"
+        ],
+        [
+          "to terminal two",
+          "terminal two",
+          "to terminal 2",
+          "terminal 2",
+          "to second terminal",
+          "second terminal"
+        ]
+      ]
+    },
+    "tab3": {
+      "enabled": true,
+      "words_en": [
+        "switch to terminal three",
+        "to terminal three switch",
+        "switch terminal three",
+        "terminal three switch",
+        "to terminal 3 switch",
+        "switch to terminal 3",
+        "terminal 3 switch",
+        "switch terminal 3",
+        "to third terminal switch",
+        "switch to third terminal",
+        "third terminal switch",
+        "switch third terminal",
+        "to terminal three",
+        "terminal three",
+        "to terminal 3",
+        "terminal 3",
+        "to third terminal",
+        "third terminal"
+      ],
+      "parts_en": [
+        [
+          "switch",
+          "-"
+        ],
+        [
+          "to terminal three",
+          "terminal three",
+          "to terminal 3",
+          "terminal 3",
+          "to third terminal",
+          "third terminal"
+        ]
+      ]
+    },
+    "tab4": {
+      "enabled": true,
+      "words_en": [
+        "to terminal four switch",
+        "switch to terminal four",
+        "switch terminal four",
+        "terminal four switch",
+        "switch to terminal 4",
+        "to terminal 4 switch",
+        "terminal 4 switch",
+        "switch terminal 4",
+        "switch to fourth terminal",
+        "to fourth terminal switch",
+        "switch fourth terminal",
+        "fourth terminal switch",
+        "to terminal four",
+        "terminal four",
+        "to terminal 4",
+        "terminal 4",
+        "to fourth terminal",
+        "fourth terminal"
+      ],
+      "parts_en": [
+        [
+          "switch",
+          "-"
+        ],
+        [
+          "to terminal four",
+          "terminal four",
+          "to terminal 4",
+          "terminal 4",
+          "to fourth terminal",
+          "fourth terminal"
+        ]
+      ]
+    },
+    "tab5": {
+      "enabled": true,
+      "words_en": [
+        "to terminal five switch",
+        "switch to terminal five",
+        "switch terminal five",
+        "terminal five switch",
+        "switch to terminal 5",
+        "to terminal 5 switch",
+        "terminal 5 switch",
+        "switch terminal 5",
+        "to fifth terminal switch",
+        "switch to fifth terminal",
+        "fifth terminal switch",
+        "switch fifth terminal",
+        "to terminal five",
+        "terminal five",
+        "to terminal 5",
+        "terminal 5",
+        "to fifth terminal",
+        "fifth terminal"
+      ],
+      "parts_en": [
+        [
+          "switch",
+          "-"
+        ],
+        [
+          "to terminal five",
+          "terminal five",
+          "to terminal 5",
+          "terminal 5",
+          "to fifth terminal",
+          "fifth terminal"
+        ]
+      ]
+    },
+    "active": {
+      "enabled": true,
+      "words_en": [
+        "terminal active",
+        "active terminal"
+      ],
+      "parts_en": [
+        [
+          "active"
+        ],
+        [
+          "terminal"
+        ]
+      ]
+    },
+    "project": {
+      "enabled": true,
+      "words_en": [
+        "switch project",
+        "project switch"
+      ],
+      "parts_en": [
+        [
+          "switch"
+        ],
+        [
+          "project"
+        ]
+      ]
+    },
+    "switch": {
+      "enabled": true,
+      "words_en": [
+        "terminal switch",
+        "switch terminal"
+      ],
+      "parts_en": [
+        [
+          "switch"
+        ],
+        [
+          "terminal"
+        ]
+      ]
+    },
+    "stop": {
+      "enabled": true,
+      "words_en": [
+        "shut up"
+      ],
+      "parts_en": [
+        [
+          "shut up"
+        ],
+        []
+      ]
+    },
+    "clear": {
+      "enabled": true,
+      "words_en": [
+        "phrase delete",
+        "delete phrase",
+        "line delete",
+        "delete line",
+        "phrase clear",
+        "clear phrase",
+        "clear line",
+        "line clear",
+        "phrase erase",
+        "erase phrase",
+        "line erase",
+        "erase line"
+      ],
+      "parts_en": [
+        [
+          "delete",
+          "clear",
+          "erase"
+        ],
+        [
+          "phrase",
+          "line"
+        ]
+      ]
+    },
+    "read_off": {
+      "enabled": true,
+      "parts_en": [
+        [
+          "turn off",
+          "switch off",
+          "stop",
+          "disable"
+        ],
+        [
+          "voice",
+          "reading",
+          "speech"
+        ]
+      ],
+      "words_en": [
+        "turn off voice",
+        "voice turn off",
+        "turn off reading",
+        "reading turn off",
+        "turn off speech",
+        "speech turn off",
+        "voice switch off",
+        "switch off voice",
+        "reading switch off",
+        "switch off reading",
+        "speech switch off",
+        "switch off speech",
+        "stop voice",
+        "voice stop",
+        "stop reading",
+        "reading stop",
+        "stop speech",
+        "speech stop",
+        "voice disable",
+        "disable voice",
+        "reading disable",
+        "disable reading",
+        "disable speech",
+        "speech disable"
+      ]
+    },
+    "lenta1": {
+      "enabled": true,
+      "words_en": [
+        "collector one"
+      ],
+      "parts_en": [
+        [
+          "collector"
+        ],
+        [
+          "one"
+        ]
+      ]
+    },
+    "lenta2": {
+      "enabled": true,
+      "words_en": [
+        "collector two"
+      ],
+      "parts_en": [
+        [
+          "collector"
+        ],
+        [
+          "two"
+        ]
+      ]
+    },
+    "lenta3": {
+      "enabled": true,
+      "words_en": [
+        "collector three"
+      ],
+      "parts_en": [
+        [
+          "collector"
+        ],
+        [
+          "three"
+        ]
+      ]
+    },
+    "lenta4": {
+      "enabled": true,
+      "words_en": [
+        "collector four"
+      ],
+      "parts_en": [
+        [
+          "collector"
+        ],
+        [
+          "four"
+        ]
+      ]
+    },
+    "lenta5": {
+      "enabled": true,
+      "words_en": [
+        "collector five"
+      ],
+      "parts_en": [
+        [
+          "collector"
+        ],
+        [
+          "five"
+        ]
+      ]
+    },
+    "jonny": {
+      "enabled": true,
+      "words_en": [
+        "johnny terminal",
+        "jonny terminal"
+      ],
+      "parts_en": [
+        [
+          "johnny",
+          "jonny"
+        ],
+        [
+          "terminal"
+        ]
+      ]
+    },
+    "amigo": {
+      "enabled": true,
+      "words_en": [
+        "amigo terminal"
+      ],
+      "parts_en": [
+        [
+          "amigo"
+        ],
+        [
+          "terminal"
+        ]
+      ]
+    },
+    "mic_mute": {
+      "enabled": true,
+      "parts_en": [
+        [
+          "turn off"
+        ],
+        [
+          "microphone"
+        ]
+      ],
+      "words_en": [
+        "turn off microphone",
+        "microphone turn off"
+      ]
+    },
+    "mic_on": {
+      "enabled": true,
+      "parts_en": [
+        [
+          "turn on"
+        ],
+        [
+          "dictation"
+        ]
+      ],
+      "words_en": [
+        "turn on dictation",
+        "dictation turn on"
+      ]
+    },
+    "wake": {
+      "enabled": true,
+      "parts_en": [
+        [
+          "buddy"
+        ],
+        []
+      ],
+      "words_en": [
+        "buddy"
+      ]
+    },
+    "read_on": {
+      "enabled": true,
+      "parts_en": [
+        [
+          "turn on"
+        ],
+        [
+          "speech"
+        ]
+      ],
+      "words_en": [
+        "turn on speech",
+        "speech turn on"
+      ]
+    },
+    "previous": {
+      "enabled": true,
+      "words_en": [
+        "switch to previous terminal",
+        "previous terminal"
+      ],
+      "parts_en": []
+    }
+  },
+  "max_words": 6,
+  "lib_dir": "",
+  "model": "models/ggml-small-q5_1.bin",
+  "model_dirs": [],
+  "whisper_port": 8791,
+  "language": "en",
+  "language_mode": "ui",
+  "prompt": "",
+  "live_prompt": "",
+  "hint_extra": "",
+  "hint_excluded": [],
+  "announce_waiting": true,
+  "read_scope": "all",
+  "secondary_reading": "",
+  "voice": "Samantha",
+  "voices": {
+    "en": "Samantha"
+  },
+  "rate": 190,
+  "secondary_rate": 190,
+  "silero_voice": "xenia",
+  "max_speech_chars": 2500,
+  "agent_voices": {},
+  "speech_finish_phrase": true,
+  "openai_playback": "stream",
+  "gemini_playback": "complete",
+  "interim_speech_chars": 120,
+  "interim_first_sentence": true,
+  "say_cut": true,
+  "live_max_minutes": 15,
+  "badge": false,
+  "badge_label": true,
+  "sounds": true,
+  "text_sound": true,
+  "work_tick": true,
+  "work_tick_scope": "active",
+  "wake_sound": true,
+  "work_tick_s": 15,
+  "poll_seconds": 0.5,
+  "settings_port": 8792,
+  "vad": {
+    "min_level": 0.012,
+    "auto_level": false,
+    "noise_adaptation": true,
+    "start_ratio": 3,
+    "silence_ms": 600,
+    "min_speech_ms": 190,
+    "min_command_ms": 30,
+    "max_speech_s": 4,
+    "dictation_max_s": 30,
+    "speaking_chunk_s": 3
+  },
+  "dictation_ignore": [
+    "thank you for watching",
+    "thanks for watching",
+    "subtitles by",
+    "please subscribe"
+  ],
+  "echo_filter": true,
+  "mute_while_playing": false,
+  "mac_output_kind": "auto",
+  "speech_tail_s": 1,
+  "listen_after_signal": false,
+  "fuzzy_ear": false,
+  "apple_mode": "live",
+  "apple_live_every_s": 0,
+  "apple_stable_lag_s": 0,
+  "apple_hold_words": 1,
+  "apple_punctuation": true,
+  "apple_final_wait_s": 4,
+  "fuzzy_threshold": 0.2,
+  "hold_while_dictating": true,
+  "queue_while_speaking": false,
+  "claude_interim": false,
+  "codex_interim": false,
+  "tests": {
+    "stt": {
+      "whisper": true,
+      "gigaam": true,
+      "zipa": true,
+      "apple": true,
+      "grok": false,
+      "openai": false,
+      "live": false
+    },
+    "voices": {
+      "me": true,
+      "silero": true,
+      "system": true,
+      "grok": false,
+      "openai": false
+    },
+    "kinds": {
+      "phrase": true,
+      "phrase+command": true,
+      "command": true,
+      "paragraph": true,
+      "paragraph+command": true
+    },
+    "repeats": 1
+  },
+  "hold_pause_s": 2,
+  "type_to_previous": true,
+  "type_in_background": false,
+  "clear_all_at_once": true,
+  "sources": {
+    "orca": true,
+    "claude": true,
+    "codex": true,
+    "opencode": false,
+    "grok": true
+  },
+  "custom_agents": [],
+  "grok_api_key": "",
+  "grok_voice": "eve",
+  "grok_format": true,
+  "phone_headphones": false,
+  "phone_input": {
+    "mode": "auto",
+    "name": "headset"
+  },
+  "phone_output": {
+    "mode": "auto",
+    "name": "headset"
+  },
+  "phone_gain": {
+    "max": 12,
+    "ratio": 4
+  },
+  "signal_sounds": {
+    "space": {
+      "file": "",
+      "volume": 1
+    },
+    "enter": {
+      "file": "",
+      "volume": 1
+    },
+    "text": {
+      "file": "",
+      "volume": 1
+    },
+    "switch": {
+      "file": "",
+      "volume": 1
+    },
+    "mode_on": {
+      "file": "",
+      "volume": 1
+    },
+    "mode_off": {
+      "file": "",
+      "volume": 1
+    },
+    "error": {
+      "file": "",
+      "volume": 1
+    },
+    "jonny": {
+      "file": "",
+      "volume": 1
+    },
+    "clear": {
+      "file": "",
+      "volume": 1
+    },
+    "mic_on": {
+      "file": "",
+      "volume": 1
+    },
+    "mic_mute": {
+      "file": "",
+      "volume": 1
+    },
+    "mic_off": {
+      "file": "",
+      "volume": 1
+    },
+    "wake": {
+      "file": "",
+      "volume": 0.6
+    },
+    "double": {
+      "file": "",
+      "volume": 1
+    },
+    "recognize_send": {
+      "file": "",
+      "volume": 1
+    },
+    "previous": {
+      "file": "",
+      "volume": 1
+    },
+    "tab": {
+      "file": "",
+      "volume": 1
+    },
+    "project": {
+      "file": "",
+      "volume": 1
+    },
+    "active": {
+      "file": "",
+      "volume": 1
+    },
+    "amigo": {
+      "file": "",
+      "volume": 1
+    },
+    "read_on": {
+      "file": "",
+      "volume": 1
+    },
+    "read_off": {
+      "file": "",
+      "volume": 1
+    },
+    "gemini_prepare": {
+      "file": "",
+      "volume": 1
+    },
+    "buttons_terminal": {
+      "file": "",
+      "volume": 1
+    },
+    "buttons_standard": {
+      "file": "",
+      "volume": 1
+    },
+    "buttons_extra1": {
+      "file": "",
+      "volume": 1
+    },
+    "buttons_extra2": {
+      "file": "",
+      "volume": 1
+    }
+  },
+  "ui_debug_icons": true,
+  "debug_log": false,
+  "audio_diagnostics": false,
+  "short_sound_stop": false,
+  "phone_sounds": {
+    "sent": true,
+    "text": true,
+    "enter": true,
+    "clear": true,
+    "beep": false
+  },
+  "grok_auth": "subscription",
+  "openai_auth": "subscription",
+  "openai_api_key": "",
+  "openai_voice": "marin",
+  "lenta_port": 8764,
+  "zipa_json": false,
+  "zipa_json_short": false,
+  "zipa_backup": "",
+  "zipa_backup_wait_s": 2,
+  "zipa_backup_commands": true,
+  "backup_rex_position": "end",
+  "gemini_api_key": "",
+  "gemini_auth": "subscription",
+  "zipa_templates": {},
+  "audio_in": {
+    "mode": "auto",
+    "name": ""
+  },
+  "audio_out": {
+    "mode": "auto",
+    "name": ""
+  },
+  "jonny": {
+    "enabled": false,
+    "name": "Jonny",
+    "command": "",
+    "profile": "Ocean",
+    "silero_voice": "eugene",
+    "grok_voice": "rex"
+  },
+  "mic_mute": false,
+  "keyword_mode": false,
+  "orch_enabled": false,
+  "terminal_announce_name_only": false,
+  "orch_hops_limit": true,
+  "orch_max_hops": 5000,
+  "orch_require_transfer": true,
+  "orch_reply_timeout": 1800,
+  "orch_strip": true,
+  "orch_strip_greetings": "Amigo, Jonny",
+  "speaker_commands_revision": 1,
+  "secondary_voice": "Samantha",
+  "secondary_silero_voice": "xenia",
+  "secondary_grok_voice": "eve",
+  "answer_signal": "log",
+  "media_controls": {
+    "enabled": false,
+    "source": "all",
+    "mac_device": "all",
+    "volume_up": "start",
+    "volume_down": "commands",
+    "play_pause": "send",
+    "volume_up_hold_release": "none",
+    "volume_down_hold_release": "none",
+    "play_pause_hold_release": "none",
+    "volume_up_hold": "none",
+    "volume_down_hold": "none",
+    "play_pause_hold": "terminal_mode",
+    "volume_up_double": "next",
+    "volume_down_double": "previous",
+    "play_pause_double": "send",
+    "volume_up_second": "none",
+    "volume_down_second": "none",
+    "play_pause_second": "commands",
+    "volume_up_double_second": "none",
+    "volume_down_double_second": "none",
+    "play_pause_double_second": "commands",
+    "volume_up_hold_second": "none",
+    "volume_down_hold_second": "none",
+    "play_pause_hold_second": "none",
+    "volume_up_hold_release_second": "none",
+    "volume_down_hold_release_second": "none",
+    "play_pause_hold_release_second": "none",
+    "volume_up_again": "recognize_send",
+    "volume_down_again": "none",
+    "play_pause_again": "none",
+    "volume_up_double_again": "none",
+    "volume_down_double_again": "none",
+    "play_pause_double_again": "none",
+    "volume_up_hold_again": "none",
+    "volume_down_hold_again": "none",
+    "play_pause_hold_again": "none",
+    "volume_up_hold_release_again": "none",
+    "volume_down_hold_release_again": "none",
+    "play_pause_hold_release_again": "none",
+    "modes": {
+      "terminal": {
+        "volume_up": "next",
+        "volume_down": "previous",
+        "play_pause": "normal_mode",
+        "volume_up_double": "none",
+        "volume_down_double": "none",
+        "play_pause_double": "none",
+        "volume_up_hold": "none",
+        "volume_down_hold": "none",
+        "play_pause_hold": "none",
+        "volume_up_hold_release": "none",
+        "volume_down_hold_release": "none",
+        "play_pause_hold_release": "none"
+      },
+      "extra1": {
+        "volume_up": "none",
+        "volume_down": "none",
+        "play_pause": "none",
+        "volume_up_double": "none",
+        "volume_down_double": "none",
+        "play_pause_double": "none",
+        "volume_up_hold": "none",
+        "volume_down_hold": "none",
+        "play_pause_hold": "none",
+        "volume_up_hold_release": "none",
+        "volume_down_hold_release": "none",
+        "play_pause_hold_release": "none"
+      },
+      "extra2": {
+        "volume_up": "none",
+        "volume_down": "none",
+        "play_pause": "none",
+        "volume_up_double": "none",
+        "volume_down_double": "none",
+        "play_pause_double": "none",
+        "volume_up_hold": "none",
+        "volume_down_hold": "none",
+        "play_pause_hold": "none",
+        "volume_up_hold_release": "none",
+        "volume_down_hold_release": "none",
+        "play_pause_hold_release": "none"
+      }
+    }
+  }
+}

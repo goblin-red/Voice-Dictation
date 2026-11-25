@@ -1,0 +1,9 @@
+#!/bin/sh
+# A private app server keeps answer metadata within this terminal's process tree.
+# Existing Codex sessions can be reopened with: codex-voice resume SESSION_ID
+for arg do
+  case "$arg" in
+    --remote|--remote=*) echo 'Voice terminal routing requires a local, separate server.' >&2; exit 2 ;;
+  esac
+done
+exec codex --no-daemon "$@"

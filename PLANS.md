@@ -1,87 +1,34 @@
-# GOBL(in) Voice — планы на будущее
+# Early design notes
 
-## 1. Мобильный пульт: диктовка с телефона в Orca
+These are design notes from the first public release.
 
-### Идея
-1. На компьютере работает GOBL(in) Voice.
-2. Утилита сама подключается к вашему веб-серверу — держит постоянное исходящее соединение (WebSocket).
-3. На телефоне открываете страницу этого сервера и диктуете штатной диктовкой телефона (микрофон на клавиатуре).
-4. Текст уходит на сервер → в утилиту → утилита печатает его в активную вкладку Orca.
+## Voice input from a phone
 
-```
-Телефон (браузер) ──https──► Ваш сервер ◄──wss (исходящее)── GOBL(in) Voice на Mac ──► Orca (вкладка в фокусе)
-```
+A browser could send text through an HTTPS relay to Voice on the Mac. Voice
+would open the outbound WebSocket. The phone could use keyboard dictation,
+select an agent or terminal tab, send keys, see agent state, and read or hear
+replies.
 
-### Замечания и что легко упустить
-- **Безопасность — главное.** Эта страница печатает в терминал агентов, а агенты могут выполнять команды.
-  По сути это удалённое управление компьютером. Нужно:
-  - **решено: вход по паролю или по QR-коду сопряжения.** QR показывает утилита; телефон сканирует его
-    и получает свой длинный ключ устройства, пароль больше не нужен. Пароль — запасной путь;
-    после нескольких неверных попыток — пауза. Ключ любого устройства можно отозвать в «Настройках»;
-  - только HTTPS/WSS;
-  - список разрешённых устройств и журнал: кто, что и когда отправил;
-  - в утилите тумблер «Удалённый доступ» (по умолчанию выключен).
-- **Соединение открывает утилита, а не сервер.** Тогда не нужно открывать порты на домашнем роутере.
-  Нужны переподключение при обрыве и проверка связи (ping).
-- **Доставка без потерь и повторов.** У каждого сообщения свой id, утилита подтверждает получение,
-  телефон показывает «доставлено».
-- **Куда печатать.** «Вкладка в фокусе» на компьютере может смениться, пока вы у телефона.
-  Лучше дать на телефоне выбор вкладки или агента (список берём из `orca terminal list`).
-- **Enter.** По умолчанию только печатать; отправлять агенту отдельной кнопкой «Enter»
-  (или галочкой «сразу отправлять»).
-- **Кнопки на странице:** Пробел, Enter, Прервать агента (Esc), Замолчать, выбор вкладки.
-- **Обратная связь.** Показывать на телефоне статус агента (работает / готов / ждёт разрешения)
-  и текст его последнего ответа, с озвучкой прямо на телефоне. Тогда это полноценный пульт:
-  можно отойти от компьютера и вести агентов с телефона.
-- **Два способа диктовки на телефоне:** микрофон клавиатуры (работает везде) и Web Speech API
-  (непрерывная диктовка без нажатий; в Chrome на Android работает хорошо, в Safari на iPhone — хуже).
-- **Иконка на экране телефона** — страницу можно сделать PWA.
+The original design called for password or QR pairing, per-device revocation,
+an explicit remote access switch, reconnects, and delivery receipts. It also
+considered a Telegram bot, a private network such as Tailscale, and the
+existing Orca pairing features.
 
-### Варианты элегантнее
-- **A. Telegram-бот прямо в утилите (рекомендую).** Утилита сама опрашивает Telegram (long polling):
-  не нужны ни свой сервер, ни открытые порты. Вход — ваш Telegram ID. Пишете или диктуете боту —
-  текст уходит в Orca. Голосовые сообщения распознаёт Whisper на компьютере.
-  Ответы агентов приходят в чат как уведомления. Меньше всего работы и сразу есть push-уведомления.
-- **B. Страница внутри утилиты + Tailscale.** У утилиты уже есть свой веб-сервер для окна —
-  добавляем мобильную страницу `/mobile`. Телефон и Mac в одной приватной сети Tailscale:
-  открываете `http://<имя-мака>:8792/mobile`. Свой сервер не нужен, всё шифруется,
-  доступ только у ваших устройств.
-- **C. Ваш сервер-ретранслятор (исходная идея).** Подходит, если нужен доступ с любого устройства
-  без установки приложений. Больше всего работы: сервер, авторизация, TLS, поддержка.
-- **D. Сначала проверить Orca.** В Orca CLI есть `--pairing-code`, `orca environment add` и возможность
-  `remote-runtime.shared-control` — возможно, у Orca уже есть свой удалённый доступ, на который можно опереться.
+## Voice and terminal controls
 
-### Порядок работ (предложение)
-1. Выбрать транспорт (A, B или C).
-2. Протокол сообщений: `text`, `key` (space, enter, esc), `select_tab`, `ack`, `status`.
-3. Модуль `remote.py` в утилите: подключение, очередь, подтверждения, тумблер в «Настройках».
-4. Мобильная страница (или бот), затем статусы агентов и ответы.
+The original roadmap included microphone echo cancellation, filtering quiet
+and noisy audio before Whisper, identifying the correct Codex session when
+several share a project folder, spoken terminal selection, and launching
+Voice at login.
 
-## 2. Доработки GOBL(in) Voice
+## Intel Macs
 
-- **Вернуть «тузик-арбузик»** — голосовая смена режима (сейчас закомментирована в `matcher.py` и `ui.html`).
-- **Эхоподавление.** Голосовой движок macOS с подавлением эха (Voice Processing IO): тогда «заткнись»
-  будет слышно во время чтения, а голос не попадёт в ввод, без полного глушения микрофона.
-- **Меньше мусора от Whisper.** Включить VAD Silero в `whisper-server` (`--vad`), чтобы в шуме
-  не появлялись «Субтитры…», «Смешка» и подобное.
-- **Codex.** Статус Codex не приходит через Orca, поэтому ответы читаются из журналов Codex.
-  Если в одной папке два Codex, отличить их пока нельзя — привязать сессию к конкретной вкладке.
-- **Выбор вкладки голосом:** «вкладка два», «к кодексу».
-- **Автозапуск** при входе в систему (LaunchAgent) и своя иконка для `GOBL(in) Voice.app`.
+The installer supports Apple Silicon. An Intel whisper.cpp build ran under
+Rosetta with Metal disabled. It used x86_64 with SSE4.2, AVX, AVX2, FMA,
+F16C, and BMI2 enabled. The smaller `ggml-base-q5_1.bin` model was faster
+in those checks.
 
-## 3. Поддержка Mac на Intel
-
-Сейчас установщик (`install.sh`) работает только на Apple Silicon с macOS 14+. Что выяснено 2 октября 2026:
-
-- **whisper-server под Intel собирается и работает** (проверено через Rosetta). Флаги сборки:
-  `-DCMAKE_SYSTEM_NAME=Darwin -DCMAKE_SYSTEM_PROCESSOR=x86_64 -DCMAKE_OSX_ARCHITECTURES=x86_64 -DGGML_METAL=OFF`
-  и `-DGGML_SSE42=ON -DGGML_AVX=ON -DGGML_AVX2=ON -DGGML_FMA=ON -DGGML_F16C=ON -DGGML_BMI2=ON`
-  (остальное — как в `tools/build-whisper-server.sh`).
-- **Модель на Intel — полегче**: `ggml-base-q5_1.bin` (фраза ~1,3 с через Rosetta против ~4 с у `small`).
-- **Что мешает:** у пакета `cryptography` (его тянет `aiortc`, нужный только режиму OpenAI) с версии 49
-  нет готовых сборок под Intel-Mac. При установке он пытается компилироваться (нужны Rust и OpenSSL) и падает.
-- **Варианты:** закрепить для Intel старые версии с готовыми сборками; либо ставить на Intel без режима OpenAI
-  (только он требует `aiortc`).
-- **Нужен настоящий Intel-Mac** для проверки: через Rosetta окно и микрофон не проверялись.
-- **Apple Silicon с macOS 13:** у пакета `av` готовые сборки только под macOS 14+, поэтому минимум — macOS 14.
-- В Homebrew готовый `whisper.cpp` есть только для ARM и свежих macOS — поэтому установщик берёт свою сборку из выпуска на GitHub.
+Some pinned packages for the OpenAI realtime mode lacked ready-made Intel
+builds, so a possible Intel distribution would need a separate dependency
+set or omit that mode. The window and microphone still need verification
+on Intel hardware.

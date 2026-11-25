@@ -1,0 +1,9 @@
+# Локальные GigaAM и Silero (по желанию): uv pip install --python lib/venv/bin/python -r requirements-local.txt
+# затем пакет gigaam без зависимостей: uv pip install --python lib/venv/bin/python --no-deps "gigaam @ git+https://github.com/salute-developers/GigaAM.git"
+torch
+torchaudio
+hydra-core
+omegaconf
+soundfile
+sentencepiece
+tqdm

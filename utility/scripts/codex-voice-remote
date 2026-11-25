@@ -1,0 +1,6 @@
+#!/bin/sh
+# One authenticated local transport per terminal; original server stays unchanged.
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+. "$DIR/core/pyenv.sh"
+CODEX_BIN="$(command -v codex)"
+exec "$PY" "$DIR/core/codex_voice_transport.py" "$CODEX_BIN" "$@"

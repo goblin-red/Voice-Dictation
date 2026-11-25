@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key><string>GOBL(in) Voice</string>
+  <key>CFBundleDisplayName</key><string>GOBL(in) Voice</string>
+  <key>CFBundleIdentifier</key><string>local.orca-voice</string>
+  <key>CFBundleExecutable</key><string>orca-voice</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleVersion</key><string>1.0</string>
+  <key>CFBundleShortVersionString</key><string>1.0</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <!-- Show only the Python application in the Dock. -->
+  <key>LSUIElement</key><true/>
+  <key>NSSpeechRecognitionUsageDescription</key><string>GOBL(in) Voice recognizes speech on this Mac for dictation.</string>
+  <key>NSMicrophoneUsageDescription</key><string>GOBL(in) Voice listens for voice commands.</string>
+</dict>
+</plist>

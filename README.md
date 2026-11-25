@@ -4,144 +4,61 @@
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14+-000000?logo=apple&logoColor=white) ![Apple Silicon M1+](https://img.shields.io/badge/Apple%20Silicon-M1+-555555) ![speech Whisper](https://img.shields.io/badge/speech-Whisper-74aa9c) [![license MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/goblin-red/Orca-Voice?style=social)](https://github.com/goblin-red/Orca-Voice/stargazers)
 
-**Talk to your AI coding agents instead of typing.** Dictate prompts into Claude Code, Codex and other agents running in Orca, send them with a voice command, switch between agent tabs and hear the answers read aloud. Speech recognition runs locally with Whisper (whisper.cpp), so your voice stays on your Mac. Hands-free vibe coding.
-
-**English** · [Русский](README.ru.md)
-
-A voice remote for coding agents running in [Orca](https://github.com/stablyai/orca) on macOS.
-Say a word — and Space or Enter goes to the Orca tab in focus. Dictate a prompt, jump to the next
-agent tab, and have the agent's answer read back to you. Hands stay off the keyboard.
-One of the extra apps of [GOBL(in)](https://goblin.red).
-
-- **Voice commands** — Space, Enter, next agent tab, stop the voice. The trigger words are yours to choose.
-- **Voice typing** — everything you say is typed into the focused tab; finish the phrase with the Enter word to send it.
-- **Answers read aloud** — when an agent (Claude, Codex, OpenCode) finishes, the macOS voice reads its reply.
-- **Runs locally** — speech recognition is [whisper.cpp](https://github.com/ggml-org/whisper.cpp) on your Mac.
-- **Two interface languages** — English and Russian, English by default, switched with the EN / RU buttons in the window header.
-
-## Requirements
-
-- A Mac with Apple Silicon (M1 or newer) and macOS 14 or newer
-- [Orca](https://github.com/stablyai/orca)
-
-Intel Macs are not supported yet.
+Dictate prompts into Claude Code, Codex, OpenCode, and other terminal agents.
+Send prompts with voice commands, switch tabs, and hear replies read aloud. Use
+local Whisper recognition and macOS voices, or configure your own provider.
 
 ## Install
 
-Paste this line into Terminal:
+Use an Apple Silicon Mac with macOS 14 or later and an internet connection.
+To install the latest version, paste this into Terminal.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/goblin-red/Orca-Voice/main/install.sh | bash
 ```
 
-It takes about two minutes and needs no administrator rights, Homebrew or Xcode. The installer:
-
-- puts the program into `~/.goblin-voice` with its own private Python — nothing else on your Mac is touched;
-- downloads `whisper-server` (whisper.cpp built for Apple Silicon) and the speech model (about 190 MB);
-- adds **GOBL(in) Voice** to your Applications folder and starts it.
-
-On the first start macOS asks for microphone access.
-
-| | |
-| --- | --- |
-| Start | Open **GOBL(in) Voice** from Applications or Spotlight |
-| Quit | Close the window |
-| Update | Run the install line again — your settings and models are kept |
-| Uninstall | `~/.goblin-voice/install.sh --uninstall` |
-
-<details>
-<summary>Manual install (for developers)</summary>
-
-Needs Python 3.13 or 3.14 and whisper.cpp (`brew install whisper-cpp`, provides `whisper-server`).
+If you already downloaded this repository, run its installer from this folder.
 
 ```sh
-git clone https://github.com/goblin-red/Orca-Voice.git
-cd Orca-Voice
-
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-
-mkdir -p models
-curl -L -o models/ggml-small-q5_1.bin \
-  https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-q5_1.bin
-
-./start.sh     # or double-click "GOBL(in) Voice.app" in this folder
-./stop.sh      # closing the window also quits everything
+bash utility/scripts/install.sh
 ```
 
-Your settings are saved to `config.json`, which is created from `config.default.json` on the first run.
+The installer puts the program and its private Python environment in
+`~/.goblin-voice` and downloads the Whisper server and model. It adds the
+launcher to `/Applications` or, if that folder is read-only, to
+`~/Applications`. Open GOBL(in) Voice there or through Spotlight. Grant
+microphone access when macOS asks. Enable Accessibility if you want Voice to
+type into other apps or send keyboard shortcuts.
 
-</details>
+Use this command to install without opening the app.
 
-## Voice commands
+```sh
+GOBLIN_VOICE_NO_LAUNCH=1 bash utility/scripts/install.sh
+```
 
-| Default word | What it does |
-| --- | --- |
-| `dumble bumble` | Space to the focused tab (in Claude with `/voice` on: start or stop recording) |
-| `rex` | Enter — send the message to the agent |
-| `switch terminal` | Go to the next agent tab in the active project, in a loop |
-| `shut up` | Interrupt the voice while it is reading an answer |
+`GOBLIN_VOICE_DIR` and `GOBLIN_VOICE_APPS` override the default directories.
 
-Russian words work out of the box too: «дамбл-бамбл», «рекс», «переключи терминал», «заткнись».
+## Use Voice
 
-Every command accepts a list of variants — the ways Whisper may hear the word. Matching is fuzzy
-(by the consonant skeleton), so small differences are fine. If a word does not trigger, look at the
-“Heard” line on the Dashboard and add that spelling in **Settings → Voice commands**.
+Open the settings window to choose your microphone, dictation engine, and
+speaking voice. Select Whisper for local dictation or System for macOS speech.
+For a cloud engine, enter your own provider key or sign in to the supported
+subscription, depending on the engine. The terminal integration is optional.
 
-Without voice typing, say a command as a separate short phrase. With voice typing on, you can put it
-at the end of a sentence: “audit the project, rex”.
+The default command `rex` sends Enter, `switch terminal` moves to the next
+terminal, and `shut up` stops speech. Change the command words in settings.
 
-## Languages
+## Source
 
-- **Interface** — English by default; the EN / RU buttons in the window header. They switch the window, statuses, the log
-  and the service phrases the voice says.
-- **Recognition** — a separate setting: **Settings → Recognition (Whisper) → Language**.
-- **Voice** — pick a macOS voice that matches the language of your agents' answers.
+- `utility/core` contains the Python service and voice processing.
+- `utility/ui` contains the settings and floating badge.
+- `utility/scripts` contains the installer and startup scripts.
+- `utility/tools` and `utility/transcription` contain optional command-line tools.
+- `utility/GOBL(in) Voice.app` contains the native launcher used by the installer.
+  Use the installed copy to launch Voice.
 
-## OpenAI mode (experimental)
-
-Besides local Whisper there is a cloud mode that streams the microphone to OpenAI's realtime
-speech service. It needs no API key: it uses **your own** ChatGPT subscription through the Codex
-sign-in on your computer (`codex login`, which creates `~/.codex/auth.json`). Nothing is bundled with
-this repository — each user signs in with their own account.
-
-Please note:
-
-- This is an unofficial, undocumented endpoint. It may change or stop working at any time, and using it
-  is at your own risk.
-- In this mode your microphone audio is sent to OpenAI. In standard mode all audio stays on your Mac.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| `app.py` | The core: window, modes, commands, settings |
-| `listener.py` | Microphone and the speech detector |
-| `whisper_srv.py` | Starts `whisper-server` and sends phrases to it |
-| `matcher.py` | Finds command words in recognized text |
-| `orca_cli.py` | Talks to Orca through its CLI |
-| `speaker.py` | Watches the agents and reads their answers aloud |
-| `live.py` | OpenAI mode |
-| `settings_server.py` | Local server (127.0.0.1) for the window |
-| `ui.html`, `ui_texts.js`, `logo.svg` | The window, its texts in two languages and the logo |
-| `i18n.py` | Statuses, log and voice phrases in two languages |
-| `config.default.json` | Default settings |
-| `install.sh` | The installer |
-| `requirements.lock.txt` | Tested package versions used by the installer |
-| `tools/build-whisper-server.sh` | Builds the `whisper-server` file published in the release |
-
-Code comments are in Russian. Changes are listed in [CHANGELOG.md](CHANGELOG.md), plans for the future in [PLANS.md](PLANS.md) (both in Russian).
-
-## FAQ
-
-**How do I talk to Claude Code or Codex by voice?**
-Install GOBL(in) Voice, turn on voice typing and speak: your words are typed into the focused agent tab. End the phrase with the Enter word ("rex" by default) to send it, and the agent's answer is read back to you.
-
-**Does it work offline?**
-Yes. The standard mode uses whisper.cpp on your Mac and the built-in macOS voices — no audio leaves the computer. The optional OpenAI mode streams audio to OpenAI's realtime speech service.
-
-**Which agents are supported?**
-Any agent running in an Orca terminal tab: Claude Code, Codex, OpenCode and others. Answers are read aloud when the agent finishes its turn.
+Settings, recordings, and logs are created locally after installation.
+The default settings in the repository have empty provider credentials.
 
 ## More GOBL(in) apps
 
@@ -153,11 +70,6 @@ Free and open source, from the makers of [GOBL(in)](https://goblin.red):
 | [GOBL(in) Session Viewer](https://github.com/goblin-red/Session-Viewer) | every Claude Code, Codex, Grok and OpenCode session in one window |
 | [GOBL(in) Drag & Taskbar](https://github.com/goblin-red/Drag-and-Taskbar) | move windows with trackpad gestures, a real taskbar and Alt-Tab for macOS |
 | [GOBL(in) Convert](https://github.com/goblin-red/Photo-Convert) | fast batch JPEG converter and photo resizer for macOS |
-| [GOBL(in) Workflow](https://github.com/goblin-red/Workflow) | visual flowchart workflows run by AI coding agents |
+| [GOBL(in) Workflow](https://github.com/goblin-red/Workflows-Canvas) | visual flowchart workflows run by AI coding agents |
 
-If this project is useful to you, please ⭐ star it — it helps other people find it.
-
-
-## License
-
-[MIT](LICENSE)
+Distributed under the [MIT License](LICENSE).

@@ -1,0 +1,17 @@
+# окно
+pywebview>=6.2
+
+# микрофон
+sounddevice>=0.5
+numpy>=2.0
+
+# режим OpenAI (WebRTC + WebSocket)
+aiortc>=1.15
+av>=17
+websockets>=15
+
+# звук в файлы (журнал, тесты, проигрыватель)
+soundfile>=0.13
+
+# Gemini: адаптер интерактивной диктовки agy по подписке
+pyte>=0.8.2,<0.9

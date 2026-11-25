@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "kind": "phrase",
+      "text": "The meeting begins at nine tomorrow.",
+      "expect": "The meeting begins at nine tomorrow.",
+      "commands": []
+    },
+    {
+      "id": "pc1",
+      "kind": "phrase+command",
+      "text": "Please open the project folder. Rex.",
+      "expect": "Please open the project folder.",
+      "commands": [
+        "enter"
+      ]
+    },
+    {
+      "id": "c1",
+      "kind": "command",
+      "text": "Switch to terminal one.",
+      "expect": "",
+      "commands": [
+        "tab1"
+      ]
+    },
+    {
+      "id": "long1",
+      "kind": "paragraph",
+      "text": "I organized the notes after the meeting. The next report will include a summary of every decision.",
+      "expect": "I organized the notes after the meeting. The next report will include a summary of every decision.",
+      "commands": []
+    },
+    {
+      "id": "longc1",
+      "kind": "paragraph+command",
+      "text": "Check the numbers before you share the draft. Send the updated file to the team. Rex.",
+      "expect": "Check the numbers before you share the draft. Send the updated file to the team.",
+      "commands": [
+        "enter"
+      ]
+    }
+  ]
+}

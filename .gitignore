@@ -1,19 +1,25 @@
-# личные настройки — создаются из config.default.json при первом запуске
+# Personal settings and runtime files
 config.json
-
-# журналы и pid
+config.json.*
+.env
+.env.*
+*.log
+*.bak
+*.bak-*
+.DS_Store
 logs/
+state/
+runs/
+archive/
+utility/data/*.secret
+utility/tests/corpus/audio/
+utility/tests/corpus/results/
 
-# модели Whisper (большие файлы, скачиваются отдельно)
+# Local dependencies and model downloads
 models/
-
-# то, что ставит установщик: свой Python, uv и whisper-server
 .venv/
 bin/
 python/
 .uv-cache/
 __pycache__/
-*.pyc
-
-# macOS
-.DS_Store
+*.py[cod]

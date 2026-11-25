@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<title>GOBL(in) Voice — listening</title>
+
+
+<link rel="stylesheet" href="/goblin-ui.css">
+<style>
+
+  :root {
+    --badge-bg: color-mix(in srgb, var(--surface) 92%, transparent); --badge-line: rgba(255, 255, 255, .12);
+    --talk: var(--info); --wait: var(--warn); --gate: var(--warn); --deaf: var(--err); --off: var(--line-strong);
+  }
+  html, body { margin: 0; height: 100%; background: transparent; overflow: hidden;
+               font: 12px/1.2 var(--font); color: var(--text);
+               -webkit-user-select: none; user-select: none; cursor: grab; }
+  .pill { box-sizing: border-box; height: 100%; display: grid; grid-template-rows: 1fr 8px; gap: 8px;
+          padding: 10px 12px 10px; background: var(--badge-bg); border: 1px solid var(--badge-line); border-radius: var(--r-lg); }
+
+  .row { display: grid; grid-template-columns: 1fr auto 18px auto 1fr; align-items: center; column-gap: 4px; min-height: 0; }
+  .row > .dot:first-of-type { margin-right: 2px; }
+
+  .sep { position: relative; align-self: stretch; }
+  .sep::before { content: none; }
+  .sep.commands::before, .sep.off::before { content: ""; position: absolute; }
+  .sep.commands::before, .sep.off::before { left: -6px; right: -6px; top: 50%; bottom: auto; width: auto; transform: translateY(-50%); }
+  .sep.commands::before { height: 0; border-top: 3px dashed var(--wait); background: none; }
+  .sep.off::before { height: 5px; border-radius: 3px; background: var(--deaf); }
+
+  .sep.commands, .sep.off { opacity: .35; transition: opacity .2s; }
+  .sep.active { opacity: 1; animation: bridge 0.9s ease-in-out infinite; }
+  @keyframes bridge { 50% { opacity: .55; } }
+  .side { display: flex; flex-direction: column; gap: 2px; min-width: 0; overflow: hidden; }
+  .side.left { align-items: flex-end; text-align: right; }
+  .side.right { align-items: flex-start; text-align: left; }
+  .name { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .state { font-size: 12.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .note { font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .note:empty::before { content: "\00a0"; }
+  .dot { flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--off); color: var(--off);
+         box-shadow: 0 0 0 4px color-mix(in srgb, currentColor 25%, transparent); }
+  .dot.speak { animation: pulse 1s ease-in-out infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 7px color-mix(in srgb, currentColor 18%, transparent); } }
+  .level { justify-self: center; width: 80%; height: 4px; border-radius: 2px; background: var(--badge-line); overflow: hidden; }
+  .level i { display: block; height: 100%; width: 0; background: var(--muted); transition: width .1s; }
+  .level i.voice { background: var(--ok); }
+
+  body.no-label .side { display: none; }
+  body.no-label .row { grid-template-columns: auto 1px auto; justify-content: center; }
+  body.no-label .pill { padding: 8px 8px 8px; gap: 6px; border-radius: 12px; }
+</style>
+</head>
+<body>
+<div class="pill" title="GOBL(in) Voice">
+  <div class="row">
+    <span class="side left"><span class="name" id="dictName">Dictation</span><span class="state" id="state">…</span><span class="note" id="note"></span></span>
+    <span class="dot" id="dot"></span>
+    <span class="sep" id="bridge"></span>
+    <span class="dot" id="vdot"></span>
+    <span class="side right"><span class="name" id="voiceName">Speech</span><span class="state" id="vstate">…</span><span class="note" id="vnote"></span></span>
+  </div>
+  <span class="level"><i id="level"></i></span>
+</div>
+<script src="/ui_texts.js"></script>
+<script>
+
+  const COLORS = { listening: "ok", openai: "ok", phone: "ok", speech: "talk", busy: "talk",
+                   wait_signal: "gate", deaf_play: "wait", deaf_voice: "wait", no_mic: "deaf", off: "off",
+                   paused: "wait" };
+  const READ = { system: "macOS voice", silero: "Silero", openai: "OpenAI", grok: "Grok" };
+  const $ = (id) => document.getElementById(id);
+  const T = (key) => (TEXTS[key] ?? key);
+
+  function paint(el, color) { el.style.background = el.style.color = `var(--${color})`; }
+
+  async function poll() {
+    try {
+      const st = await (await fetch("/api/ear")).json();
+
+      paint($("dot"), COLORS[st.ear] || "off");
+      const [state, ...rest] = T("ear." + st.ear).split(" — ");
+      $("state").textContent = state;
+      $("note").textContent = st.zipa === "loading" ? (("ZIPA loading…"))
+        : st.zipa === "error" ? (("ZIPA failed"))
+        : st.zipa === "ready" && !rest.length ? "ZIPA" : rest.join(" — ");
+      if (st.zipa === "loading") paint($("dot"), "wait");
+
+      const off = st.reading === "off";
+      paint($("vdot"), st.paused ? "wait" : off ? "off" : st.speaking ? "talk" : "ok");
+      $("vdot").classList.toggle("speak", !off && st.speaking);
+      $("vdot").style.opacity = off || st.speaking ? 1 : .55;
+      $("vstate").textContent = st.paused ? (("paused")) : off ? (("off")) : st.speaking ? (("speaking")) : (("idle"));
+      $("vnote").textContent = st.paused ? (("voice paused")) : off ? "" : (READ[st.reading] || st.reading) + " · " +
+        (st.sound_on === "phone" ? (("phone")) : (("Mac")));
+      $("dictName").textContent = ("Dictation");
+      $("voiceName").textContent = ("Speech");
+      const bridge = $("bridge");
+      let mode = st.mic_speaking === "dictation" ? "" : (st.mic_speaking || "");
+      if (st.deaf === "play") mode = "off";
+      const active = !!mode && (st.speaking || !!st.deaf);
+      bridge.className = "sep " + mode + (active ? " active" : "");
+      bridge.title = { off: ("While speaking — mic is deaf"),
+                       commands: ("While speaking — commands only"),
+                       dictation: ("Speech does not affect dictation") }[st.mic_speaking] || "";
+      if (st.deaf === "play") bridge.title = ("Sound is playing — mic is off");
+      document.body.classList.toggle("no-label", !st.label);
+      const pos = Math.min(100, Math.sqrt(Math.max(0, st.level) / 0.15) * 100);
+      $("level").style.width = pos + "%";
+      $("level").classList.toggle("voice", st.level > st.threshold);
+    } catch (e) {
+      paint($("dot"), "off"); paint($("vdot"), "off");
+      $("state").textContent = "Voice?";
+      $("note").textContent = $("vstate").textContent = $("vnote").textContent = "";
+    }
+    setTimeout(poll, 250);
+  }
+  poll();
+
+
+  document.addEventListener("dblclick", () => {
+    fetch("/api/action", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: "window" }) });
+  });
+</script>
+</body>
+</html>

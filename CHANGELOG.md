@@ -1,20 +1,17 @@
 # Changelog
 
-## 2026-10-02 — v1.0
+## Unreleased
 
-- Первая публикация на GitHub: `goblin-red/Orca-Voice`, лицензия MIT.
-- Репозиторий на GitHub переименован с заглавных букв: `Orca-Voice` (прежний адрес `orca-voice` продолжает работать).
-- Приложение переименовано из Orca Voice в GOBL(in) Voice — как остальные приложения на сайте goblin.red; в шапку окна добавлен логотип Goblin (`logo.svg`).
-  Адрес репозитория и внутренние имена (`orca-voice.log`, bundle id) остались прежними.
-- Интерфейс стал двуязычным: английский по умолчанию, русский по кнопкам EN / RU в шапке окна.
-  Переведены окно, статусы, журнал и служебные фразы голоса (`i18n.py`, `ui_texts.js`).
-- Новая голосовая команда «switch terminal» / «переключи терминал»: следующая вкладка с агентом
-  в активном проекте, по кругу. Английские слова команд добавлены по умолчанию.
-- Добавлен `install.sh`: установка одной командой на Mac с Apple Silicon (macOS 14+) без Homebrew,
-  Xcode и прав администратора. Ставит свой Python (через uv), проверенные версии пакетов
-  (`requirements.lock.txt`), свою сборку `whisper-server` и модель; умеет обновлять и удалять.
-- Сборка `whisper-server` (whisper.cpp 1.9.4) лежит в выпуске v1.0; её делает `tools/build-whisper-server.sh`.
-- Настройки по умолчанию вынесены в `config.default.json`; личный `config.json` в репозиторий не попадает.
-- `stop.sh` надёжно останавливает утилиту, даже когда открыто окно.
-- Одна и та же ошибка опроса Orca (например, Orca закрыт) пишется в журнал один раз, а не при каждом опросе.
-- Поддержка Mac на Intel отложена — что выяснено, записано в `PLANS.md`.
+- Moved the app and source files into `utility/`. Existing install links still work.
+- Added the floating badge, voice and media controls, speech engine options, and terminal integrations.
+- English is the interface language.
+
+## 2026-10-02 · v1.0
+
+- First public release of GOBL(in) Voice under the MIT License.
+- Renamed the app from Orca Voice and added the Goblin logo. The previous repository address continued to work.
+- Released English and Russian interface translations.
+- Added a voice command to switch to the next terminal tab and default English command words.
+- Added the Apple Silicon installer for macOS 14 and later. It sets up private Python, a pinned whisper.cpp 1.9.4 build, and the Whisper model.
+- Moved default settings into their own file and excluded personal settings from the repository.
+- Improved shutdown and avoided repeating the same Orca polling error in the log.

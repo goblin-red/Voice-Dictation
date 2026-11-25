@@ -1,0 +1,97 @@
+[
+  {
+    "id": "switch_terminal",
+    "title": [
+      "Switch terminal",
+      "Switch terminal"
+    ],
+    "ask": [
+      "Any wording about switching terminals: “switch me…”, “move me to Codex”, “give me another terminal”",
+      "Any wording about switching terminals: “switch me…”, “move me to Codex”, “give me another terminal”"
+    ],
+    "steps": [
+      [
+        "Step 1 — window not named: list Terminal tabs (tty, title, agent) except own “Jonny” and wait for the choice",
+        "Step 1 — window not named: list Terminal tabs (tty, title, agent) except own “Jonny” and wait for the choice"
+      ],
+      [
+        "Step 2 — bring the chosen tab (by tty) to front",
+        "Step 2 — bring the chosen tab (by tty) to front"
+      ],
+      [
+        "Step 3 — right away turn Jonny mode off with the amigo action: the window stays in front, Voice clears its input line",
+        "Step 3 — right away turn Jonny mode off with the amigo action: the window stays in front, Voice clears its input line"
+      ],
+      [
+        "Step 4 — answer in one phrase: “Jonny, switched to …”",
+        "Step 4 — answer in one phrase: “Jonny, switched to …”"
+      ]
+    ],
+    "note": [
+      "Steps 2 and 3 always together: without step 3 speech keeps going to Jonny. Commands are in the commands field of this file (Agents → Jonny → Jonny actions does not show them).",
+      "Steps 2 and 3 always together: without step 3 speech keeps going to Jonny. Commands are in the commands field of this file (Agents → Jonny → Jonny actions does not show them)."
+    ],
+    "commands": [
+      {
+        "step": 1,
+        "run": "osascript -e 'tell application \"Terminal\"' -e 'set out to \"\"' -e 'repeat with w in windows' -e 'repeat with t in tabs of w' -e 'set out to out & (tty of t) & (character id 9) & (custom title of t) & linefeed' -e 'end repeat' -e 'end repeat' -e 'return out' -e 'end tell' | while IFS=\"$(printf '\\t')\" read -r tty title; do if [ -n \"$tty\" ]; then printf '%s\\t%s\\t%s\\n' \"$tty\" \"$title\" \"$(ps -t \"${tty#/dev/}\" -o comm= | awk -F/ '{print $NF}' | grep -m1 -E '^(claude|codex|opencode|grok)$')\"; fi; done"
+      },
+      {
+        "step": 2,
+        "run": "osascript - /dev/ttysNNN <<'EOF'\non run argv\n  set wanted to item 1 of argv\n  tell application \"Terminal\"\n    repeat with w in windows\n      repeat with t in tabs of w\n        if tty of t is wanted then\n          set selected tab of w to t\n          set index of w to 1\n          activate\n          return \"ok\"\n        end if\n      end repeat\n    end repeat\n  end tell\n  return \"none\"\nend run\nEOF",
+        "replace": "/dev/ttysNNN is the TTY of the tab selected in step 1"
+      },
+      {
+        "step": 3,
+        "run": "curl -s -m 3 -X POST -H 'Content-Type: application/json' -d '{\"name\":\"amigo\"}' http://127.0.0.1:8792/api/action"
+      }
+    ]
+  },
+  {
+    "id": "restart_voice",
+    "title": [
+      "Restart Voice",
+      "Restart Voice"
+    ],
+    "ask": [
+      "“restart Voice”, after editing Voice code",
+      "“restart Voice”, after editing Voice code"
+    ],
+    "steps": [
+      [
+        "Step 1 — warn in one phrase: “Jonny: restarting Voice, deaf for ~15 seconds”",
+        "Step 1 — warn in one phrase: “Jonny: restarting Voice, deaf for ~15 seconds”"
+      ],
+      [
+        "Step 2 — bring own “Jonny” tab to front: after restart Jonny mode is off and speech goes to the front window",
+        "Step 2 — bring own “Jonny” tab to front: after restart Jonny mode is off and speech goes to the front window"
+      ],
+      [
+        "Step 3 — ./stop.sh and open GOBL(in) Voice.app",
+        "Step 3 — ./stop.sh and open GOBL(in) Voice.app"
+      ],
+      [
+        "Step 4 — wait for /api/state and answer “Jonny: Voice restarted”",
+        "Step 4 — wait for /api/state and answer “Jonny: Voice restarted”"
+      ]
+    ],
+    "note": [
+      "Edit config.json only between steps 3 and 4 (Voice stopped). Restart does not close Jonny's tab. No pkill -f app.py: it also kills the Collector.",
+      "Edit config.json only between steps 3 and 4 (Voice stopped). Restart does not close Jonny's tab. No pkill -f app.py: it also kills the Collector."
+    ],
+    "commands": [
+      {
+        "step": 2,
+        "run": "TTY=$(curl -s -m 2 http://127.0.0.1:8792/api/state | python3 -c 'import json,sys; print(json.load(sys.stdin)[\"jonny\"][\"tty\"] or \"\")') && osascript - \"$TTY\" <<'EOF'\non run argv\n  set wanted to item 1 of argv\n  tell application \"Terminal\"\n    repeat with w in windows\n      repeat with t in tabs of w\n        if tty of t is wanted then\n          set selected tab of w to t\n          set index of w to 1\n          activate\n          return \"ok\"\n        end if\n      end repeat\n    end repeat\n  end tell\n  return \"none\"\nend run\nEOF"
+      },
+      {
+        "step": 3,
+        "run": "cd \"${GOBLIN_VOICE_DIR:-$HOME/.goblin-voice}\" && ./scripts/stop.sh && open -a \"GOBL(in) Voice\""
+      },
+      {
+        "step": 4,
+        "run": "for i in $(seq 1 20); do curl -s -m 2 -o /dev/null http://127.0.0.1:8792/api/state && echo up && break; sleep 1; done"
+      }
+    ]
+  }
+]

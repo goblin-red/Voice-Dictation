@@ -1,0 +1,4185 @@
+[
+  {
+    "id": "voice:button",
+    "file": "utility/ui/ui.html",
+    "line": 536,
+    "tag": "button"
+  },
+  {
+    "id": "voice:button:2",
+    "file": "utility/ui/ui.html",
+    "line": 538,
+    "tag": "button"
+  },
+  {
+    "id": "voice:button:3",
+    "file": "utility/ui/ui.html",
+    "line": 544,
+    "tag": "button"
+  },
+  {
+    "id": "voice:button:4",
+    "file": "utility/ui/ui.html",
+    "line": 545,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:dash.lenta",
+    "file": "utility/ui/ui.html",
+    "line": 546,
+    "tag": "button",
+    "data-i18n": "dash.lenta"
+  },
+  {
+    "id": "voice:app-launch:canvas",
+    "file": "utility/ui/ui.html",
+    "line": 603,
+    "tag": "button",
+    "data-i18n": "app.canvas",
+    "handler": "utility/ui/ui.html:/api/launch (canvas)"
+  },
+  {
+    "id": "voice:app-launch:drag",
+    "file": "utility/ui/ui.html",
+    "line": 604,
+    "tag": "button",
+    "data-i18n": "app.drag",
+    "handler": "utility/ui/ui.html:/api/launch (drag)"
+  },
+  {
+    "id": "voice:app-launch:ai",
+    "file": "utility/ui/ui.html",
+    "line": 606,
+    "tag": "button",
+    "data-i18n": "app.ai",
+    "handler": "utility/ui/ui.html:/api/launch (ai)"
+  },
+  {
+    "id": "voice:app-launch:convert",
+    "file": "utility/ui/ui.html",
+    "line": 607,
+    "tag": "button",
+    "data-i18n": "app.convert",
+    "handler": "utility/ui/ui.html:/api/launch (convert)"
+  },
+  {
+    "id": "voice:button:5",
+    "file": "utility/ui/ui.html",
+    "line": 549,
+    "tag": "button"
+  },
+  {
+    "id": "voice:button:6",
+    "file": "utility/ui/ui.html",
+    "line": 550,
+    "tag": "button"
+  },
+  {
+    "id": "voice:button:7",
+    "file": "utility/ui/ui.html",
+    "line": 559,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:tab.dash",
+    "file": "utility/ui/ui.html",
+    "line": 561,
+    "tag": "button",
+    "data-i18n": "tab.dash"
+  },
+  {
+    "id": "voice:data-i18n:settings.dictation",
+    "file": "utility/ui/ui.html",
+    "line": 562,
+    "tag": "button",
+    "data-i18n": "settings.dictation"
+  },
+  {
+    "id": "voice:data-i18n:settings.speech",
+    "file": "utility/ui/ui.html",
+    "line": 563,
+    "tag": "button",
+    "data-i18n": "settings.speech"
+  },
+  {
+    "id": "voice:data-i18n:settings.general",
+    "file": "utility/ui/ui.html",
+    "line": 564,
+    "tag": "button",
+    "data-i18n": "settings.general"
+  },
+  {
+    "id": "voice:data-i18n:settings.terminals",
+    "file": "utility/ui/ui.html",
+    "line": 565,
+    "tag": "button",
+    "data-i18n": "settings.terminals"
+  },
+  {
+    "id": "voice:data-i18n:tab.commands",
+    "file": "utility/ui/ui.html",
+    "line": 566,
+    "tag": "button",
+    "data-i18n": "tab.commands"
+  },
+  {
+    "id": "voice:data-i18n:tab.cli",
+    "file": "utility/ui/ui.html",
+    "line": 567,
+    "tag": "button",
+    "data-i18n": "tab.cli"
+  },
+  {
+    "id": "voice:data-i18n:tab.orch",
+    "file": "utility/ui/ui.html",
+    "line": 568,
+    "tag": "button",
+    "data-i18n": "tab.orch"
+  },
+  {
+    "id": "voice:data-i18n:tab.details",
+    "file": "utility/ui/ui.html",
+    "line": 569,
+    "tag": "button",
+    "data-i18n": "tab.details"
+  },
+  {
+    "id": "voice:data-i18n:tab.guide",
+    "file": "utility/ui/ui.html",
+    "line": 570,
+    "tag": "button",
+    "data-i18n": "tab.guide"
+  },
+  {
+    "id": "voice:button:8",
+    "file": "utility/ui/ui.html",
+    "line": 572,
+    "tag": "button"
+  },
+  {
+    "id": "voice:id:page-dash",
+    "file": "utility/ui/ui.html",
+    "line": 578,
+    "tag": "section",
+    "control_id": "page-dash"
+  },
+  {
+    "id": "voice:id:appPage",
+    "file": "utility/ui/ui.html",
+    "line": 583,
+    "tag": "section",
+    "control_id": "appPage"
+  },
+  {
+    "id": "voice:id:appName",
+    "file": "utility/ui/ui.html",
+    "line": 584,
+    "tag": "h2",
+    "control_id": "appName"
+  },
+  {
+    "id": "voice:id:appStart",
+    "file": "utility/ui/ui.html",
+    "line": 588,
+    "tag": "button",
+    "control_id": "appStart",
+    "data-i18n": "app.start"
+  },
+  {
+    "id": "voice:id:appClose",
+    "file": "utility/ui/ui.html",
+    "line": 589,
+    "tag": "button",
+    "control_id": "appClose",
+    "data-i18n": "app.close"
+  },
+  {
+    "id": "voice:id:dashCard",
+    "file": "utility/ui/ui.html",
+    "line": 593,
+    "tag": "details",
+    "control_id": "dashCard",
+    "data-fold": "h-now"
+  },
+  {
+    "id": "voice:summary",
+    "file": "utility/ui/ui.html",
+    "line": 594,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:dash.fold.now",
+    "file": "utility/ui/ui.html",
+    "line": 594,
+    "tag": "h2",
+    "data-i18n": "dash.fold.now"
+  },
+  {
+    "id": "voice:label",
+    "file": "utility/ui/ui.html",
+    "line": 601,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-i18n:btn.change",
+    "file": "utility/ui/ui.html",
+    "line": 602,
+    "tag": "button",
+    "data-i18n": "btn.change"
+  },
+  {
+    "id": "voice:label:2",
+    "file": "utility/ui/ui.html",
+    "line": 606,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-i18n:btn.change:2",
+    "file": "utility/ui/ui.html",
+    "line": 607,
+    "tag": "button",
+    "data-i18n": "btn.change"
+  },
+  {
+    "id": "voice:label:3",
+    "file": "utility/ui/ui.html",
+    "line": 610,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-i18n:btn.change:3",
+    "file": "utility/ui/ui.html",
+    "line": 611,
+    "tag": "button",
+    "data-i18n": "btn.change"
+  },
+  {
+    "id": "voice:id:pauseBtn",
+    "file": "utility/ui/ui.html",
+    "line": 615,
+    "tag": "button",
+    "control_id": "pauseBtn",
+    "data-act": "voice.pause",
+    "data-i18n": "pause.btn",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:hush",
+    "file": "utility/ui/ui.html",
+    "line": 616,
+    "tag": "button",
+    "data-act": "hush",
+    "data-i18n": "home.hush",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-fold:h-state",
+    "file": "utility/ui/ui.html",
+    "line": 620,
+    "tag": "details",
+    "data-fold": "h-state"
+  },
+  {
+    "id": "voice:summary:2",
+    "file": "utility/ui/ui.html",
+    "line": 621,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:dash.fold.state",
+    "file": "utility/ui/ui.html",
+    "line": 621,
+    "tag": "h2",
+    "data-i18n": "dash.fold.state"
+  },
+  {
+    "id": "voice:data-i18n:home.log",
+    "file": "utility/ui/ui.html",
+    "line": 645,
+    "tag": "button",
+    "data-i18n": "home.log"
+  },
+  {
+    "id": "voice:id:page-guide",
+    "file": "utility/ui/ui.html",
+    "line": 651,
+    "tag": "section",
+    "control_id": "page-guide"
+  },
+  {
+    "id": "voice:data-fold:d-commands",
+    "file": "utility/ui/ui.html",
+    "line": 652,
+    "tag": "details",
+    "data-fold": "d-commands"
+  },
+  {
+    "id": "voice:summary:3",
+    "file": "utility/ui/ui.html",
+    "line": 653,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:dash.commands",
+    "file": "utility/ui/ui.html",
+    "line": 653,
+    "tag": "h2",
+    "data-i18n": "dash.commands"
+  },
+  {
+    "id": "voice:data-fold:g-start",
+    "file": "utility/ui/ui.html",
+    "line": 659,
+    "tag": "details",
+    "data-fold": "g-start"
+  },
+  {
+    "id": "voice:summary:4",
+    "file": "utility/ui/ui.html",
+    "line": 660,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.start.h",
+    "file": "utility/ui/ui.html",
+    "line": 660,
+    "tag": "h2",
+    "data-i18n": "g.start.h"
+  },
+  {
+    "id": "voice:data-fold:g-modes",
+    "file": "utility/ui/ui.html",
+    "line": 668,
+    "tag": "details",
+    "data-fold": "g-modes"
+  },
+  {
+    "id": "voice:summary:5",
+    "file": "utility/ui/ui.html",
+    "line": 669,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.modes.h",
+    "file": "utility/ui/ui.html",
+    "line": 669,
+    "tag": "h2",
+    "data-i18n": "g.modes.h"
+  },
+  {
+    "id": "voice:data-fold:g-typing",
+    "file": "utility/ui/ui.html",
+    "line": 677,
+    "tag": "details",
+    "data-fold": "g-typing"
+  },
+  {
+    "id": "voice:summary:6",
+    "file": "utility/ui/ui.html",
+    "line": 678,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.typing.h",
+    "file": "utility/ui/ui.html",
+    "line": 678,
+    "tag": "h2",
+    "data-i18n": "g.typing.h"
+  },
+  {
+    "id": "voice:data-fold:g-cmds",
+    "file": "utility/ui/ui.html",
+    "line": 686,
+    "tag": "details",
+    "data-fold": "g-cmds"
+  },
+  {
+    "id": "voice:summary:7",
+    "file": "utility/ui/ui.html",
+    "line": 687,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.cmds.h",
+    "file": "utility/ui/ui.html",
+    "line": 687,
+    "tag": "h2",
+    "data-i18n": "g.cmds.h"
+  },
+  {
+    "id": "voice:data-fold:g-direct",
+    "file": "utility/ui/ui.html",
+    "line": 700,
+    "tag": "details",
+    "data-fold": "g-direct"
+  },
+  {
+    "id": "voice:summary:8",
+    "file": "utility/ui/ui.html",
+    "line": 701,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.direct.h",
+    "file": "utility/ui/ui.html",
+    "line": 701,
+    "tag": "h2",
+    "data-i18n": "g.direct.h"
+  },
+  {
+    "id": "voice:data-fold:g-how",
+    "file": "utility/ui/ui.html",
+    "line": 710,
+    "tag": "details",
+    "data-fold": "g-how"
+  },
+  {
+    "id": "voice:summary:9",
+    "file": "utility/ui/ui.html",
+    "line": 711,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.how.h",
+    "file": "utility/ui/ui.html",
+    "line": 711,
+    "tag": "h2",
+    "data-i18n": "g.how.h"
+  },
+  {
+    "id": "voice:data-fold:g-speak",
+    "file": "utility/ui/ui.html",
+    "line": 718,
+    "tag": "details",
+    "data-fold": "g-speak"
+  },
+  {
+    "id": "voice:summary:10",
+    "file": "utility/ui/ui.html",
+    "line": 719,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.speak.h",
+    "file": "utility/ui/ui.html",
+    "line": 719,
+    "tag": "h2",
+    "data-i18n": "g.speak.h"
+  },
+  {
+    "id": "voice:data-fold:g-dot",
+    "file": "utility/ui/ui.html",
+    "line": 729,
+    "tag": "details",
+    "data-fold": "g-dot"
+  },
+  {
+    "id": "voice:summary:11",
+    "file": "utility/ui/ui.html",
+    "line": 730,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.dot.h",
+    "file": "utility/ui/ui.html",
+    "line": 730,
+    "tag": "h2",
+    "data-i18n": "g.dot.h"
+  },
+  {
+    "id": "voice:data-fold:g-fix",
+    "file": "utility/ui/ui.html",
+    "line": 739,
+    "tag": "details",
+    "data-fold": "g-fix"
+  },
+  {
+    "id": "voice:summary:12",
+    "file": "utility/ui/ui.html",
+    "line": 740,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.fix.h",
+    "file": "utility/ui/ui.html",
+    "line": 740,
+    "tag": "h2",
+    "data-i18n": "g.fix.h"
+  },
+  {
+    "id": "voice:data-fold:g-lang",
+    "file": "utility/ui/ui.html",
+    "line": 748,
+    "tag": "details",
+    "data-fold": "g-lang"
+  },
+  {
+    "id": "voice:summary:13",
+    "file": "utility/ui/ui.html",
+    "line": 749,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.lang.h",
+    "file": "utility/ui/ui.html",
+    "line": 749,
+    "tag": "h2",
+    "data-i18n": "g.lang.h"
+  },
+  {
+    "id": "voice:data-fold:g-inside",
+    "file": "utility/ui/ui.html",
+    "line": 753,
+    "tag": "details",
+    "data-fold": "g-inside"
+  },
+  {
+    "id": "voice:summary:14",
+    "file": "utility/ui/ui.html",
+    "line": 754,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.inside.h",
+    "file": "utility/ui/ui.html",
+    "line": 754,
+    "tag": "h2",
+    "data-i18n": "g.inside.h"
+  },
+  {
+    "id": "voice:data-fold:g-transcription",
+    "file": "utility/ui/ui.html",
+    "line": 757,
+    "tag": "details",
+    "data-fold": "g-transcription"
+  },
+  {
+    "id": "voice:summary:15",
+    "file": "utility/ui/ui.html",
+    "line": 758,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:g.transcription.h",
+    "file": "utility/ui/ui.html",
+    "line": 758,
+    "tag": "h2",
+    "data-i18n": "g.transcription.h"
+  },
+  {
+    "id": "voice:data-i18n:g.transcription.link",
+    "file": "utility/ui/ui.html",
+    "line": 760,
+    "tag": "a",
+    "data-i18n": "g.transcription.link"
+  },
+  {
+    "id": "voice:data-i18n:g.transcription.benchmarks",
+    "file": "utility/ui/ui.html",
+    "line": 761,
+    "tag": "a",
+    "data-i18n": "g.transcription.benchmarks"
+  },
+  {
+    "id": "voice:id:page-cli",
+    "file": "utility/ui/ui.html",
+    "line": 766,
+    "tag": "section",
+    "control_id": "page-cli"
+  },
+  {
+    "id": "voice:data-fold:c-queue",
+    "file": "utility/ui/ui.html",
+    "line": 809,
+    "tag": "details",
+    "data-fold": "c-queue"
+  },
+  {
+    "id": "voice:summary:17",
+    "file": "utility/ui/ui.html",
+    "line": 810,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:h2",
+    "file": "utility/ui/ui.html",
+    "line": 810,
+    "tag": "h2"
+  },
+  {
+    "id": "voice:data-act:clear_queue",
+    "file": "utility/ui/ui.html",
+    "line": 813,
+    "tag": "button",
+    "data-act": "clear_queue",
+    "data-i18n": "cli.queue.clear",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-fold:c-sources",
+    "file": "utility/ui/ui.html",
+    "line": 815,
+    "tag": "details",
+    "data-fold": "c-sources"
+  },
+  {
+    "id": "voice:summary:18",
+    "file": "utility/ui/ui.html",
+    "line": 816,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.sources",
+    "file": "utility/ui/ui.html",
+    "line": 816,
+    "tag": "h2",
+    "data-i18n": "s.speak.sources"
+  },
+  {
+    "id": "voice:id:sources.orca",
+    "file": "utility/ui/ui.html",
+    "line": 819,
+    "tag": "input",
+    "control_id": "sources.orca",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details",
+    "file": "utility/ui/ui.html",
+    "line": 819,
+    "tag": "details"
+  },
+  {
+    "id": "voice:summary:19",
+    "file": "utility/ui/ui.html",
+    "line": 819,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:id:sources.claude",
+    "file": "utility/ui/ui.html",
+    "line": 820,
+    "tag": "input",
+    "control_id": "sources.claude",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details:2",
+    "file": "utility/ui/ui.html",
+    "line": 820,
+    "tag": "details"
+  },
+  {
+    "id": "voice:summary:20",
+    "file": "utility/ui/ui.html",
+    "line": 820,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:id:sources.codex",
+    "file": "utility/ui/ui.html",
+    "line": 821,
+    "tag": "input",
+    "control_id": "sources.codex",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details:3",
+    "file": "utility/ui/ui.html",
+    "line": 821,
+    "tag": "details"
+  },
+  {
+    "id": "voice:summary:21",
+    "file": "utility/ui/ui.html",
+    "line": 821,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:id:sources.opencode",
+    "file": "utility/ui/ui.html",
+    "line": 822,
+    "tag": "input",
+    "control_id": "sources.opencode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details:4",
+    "file": "utility/ui/ui.html",
+    "line": 822,
+    "tag": "details"
+  },
+  {
+    "id": "voice:summary:22",
+    "file": "utility/ui/ui.html",
+    "line": 822,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:id:sources.grok",
+    "file": "utility/ui/ui.html",
+    "line": 823,
+    "tag": "input",
+    "control_id": "sources.grok",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details:5",
+    "file": "utility/ui/ui.html",
+    "line": 823,
+    "tag": "details"
+  },
+  {
+    "id": "voice:summary:23",
+    "file": "utility/ui/ui.html",
+    "line": 823,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:section",
+    "file": "utility/ui/ui.html",
+    "line": 827,
+    "tag": "section"
+  },
+  {
+    "id": "voice:label:6",
+    "file": "utility/ui/ui.html",
+    "line": 829,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-i18n:cli.keys.go",
+    "file": "utility/ui/ui.html",
+    "line": 830,
+    "tag": "button",
+    "data-i18n": "cli.keys.go"
+  },
+  {
+    "id": "voice:data-fold:c-hints",
+    "file": "utility/ui/ui.html",
+    "line": 834,
+    "tag": "details",
+    "data-fold": "c-hints"
+  },
+  {
+    "id": "voice:summary:24",
+    "file": "utility/ui/ui.html",
+    "line": 835,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:hints.h",
+    "file": "utility/ui/ui.html",
+    "line": 835,
+    "tag": "h2",
+    "data-i18n": "hints.h"
+  },
+  {
+    "id": "voice:data-i18n:hints.words",
+    "file": "utility/ui/ui.html",
+    "line": 838,
+    "tag": "label",
+    "data-i18n": "hints.words"
+  },
+  {
+    "id": "voice:data-i18n:hints.extra",
+    "file": "utility/ui/ui.html",
+    "line": 843,
+    "tag": "label",
+    "data-i18n": "hints.extra"
+  },
+  {
+    "id": "voice:id:hint_extra",
+    "file": "utility/ui/ui.html",
+    "line": 844,
+    "tag": "textarea",
+    "control_id": "hint_extra",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:hints.live",
+    "file": "utility/ui/ui.html",
+    "line": 847,
+    "tag": "label",
+    "data-i18n": "hints.live"
+  },
+  {
+    "id": "voice:id:live_prompt",
+    "file": "utility/ui/ui.html",
+    "line": 848,
+    "tag": "textarea",
+    "control_id": "live_prompt",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:livePromptReset",
+    "file": "utility/ui/ui.html",
+    "line": 850,
+    "tag": "button",
+    "control_id": "livePromptReset",
+    "data-i18n": "hints.reset"
+  },
+  {
+    "id": "voice:data-i18n:s.whisper.prompt",
+    "file": "utility/ui/ui.html",
+    "line": 853,
+    "tag": "label",
+    "data-i18n": "s.whisper.prompt"
+  },
+  {
+    "id": "voice:id:prompt",
+    "file": "utility/ui/ui.html",
+    "line": 854,
+    "tag": "input",
+    "control_id": "prompt",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:c-custom",
+    "file": "utility/ui/ui.html",
+    "line": 858,
+    "tag": "details",
+    "data-fold": "c-custom"
+  },
+  {
+    "id": "voice:summary:25",
+    "file": "utility/ui/ui.html",
+    "line": 859,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:cli.custom.h",
+    "file": "utility/ui/ui.html",
+    "line": 859,
+    "tag": "h2",
+    "data-i18n": "cli.custom.h"
+  },
+  {
+    "id": "voice:id:customName",
+    "file": "utility/ui/ui.html",
+    "line": 861,
+    "tag": "input",
+    "control_id": "customName",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:customAdd",
+    "file": "utility/ui/ui.html",
+    "line": 861,
+    "tag": "button",
+    "control_id": "customAdd",
+    "data-i18n": "cli.custom.add"
+  },
+  {
+    "id": "voice:id:page-orch",
+    "file": "utility/ui/ui.html",
+    "line": 868,
+    "tag": "section",
+    "control_id": "page-orch"
+  },
+  {
+    "id": "voice:data-fold:o-main",
+    "file": "utility/ui/ui.html",
+    "line": 869,
+    "tag": "details",
+    "data-fold": "o-main"
+  },
+  {
+    "id": "voice:summary:26",
+    "file": "utility/ui/ui.html",
+    "line": 870,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:h2:2",
+    "file": "utility/ui/ui.html",
+    "line": 870,
+    "tag": "h2"
+  },
+  {
+    "id": "voice:label:7",
+    "file": "utility/ui/ui.html",
+    "line": 872,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:orch_enabled",
+    "file": "utility/ui/ui.html",
+    "line": 873,
+    "tag": "input",
+    "control_id": "orch_enabled",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:button:9",
+    "file": "utility/ui/ui.html",
+    "line": 877,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:orch.stop_all",
+    "file": "utility/ui/ui.html",
+    "line": 878,
+    "tag": "button",
+    "data-i18n": "orch.stop_all"
+  },
+  {
+    "id": "voice:data-fold:o-sessions",
+    "file": "utility/ui/ui.html",
+    "line": 881,
+    "tag": "details",
+    "data-fold": "o-sessions"
+  },
+  {
+    "id": "voice:summary:27",
+    "file": "utility/ui/ui.html",
+    "line": 882,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:orch.sessions.h",
+    "file": "utility/ui/ui.html",
+    "line": 882,
+    "tag": "h2",
+    "data-i18n": "orch.sessions.h"
+  },
+  {
+    "id": "voice:data-i18n:orch.announce.name_only",
+    "file": "utility/ui/ui.html",
+    "line": 885,
+    "tag": "label",
+    "data-i18n": "orch.announce.name_only"
+  },
+  {
+    "id": "voice:id:terminal_announce_name_only",
+    "file": "utility/ui/ui.html",
+    "line": 886,
+    "tag": "input",
+    "control_id": "terminal_announce_name_only",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:o-start",
+    "file": "utility/ui/ui.html",
+    "line": 891,
+    "tag": "details",
+    "data-fold": "o-start"
+  },
+  {
+    "id": "voice:summary:28",
+    "file": "utility/ui/ui.html",
+    "line": 892,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:orch.start.h",
+    "file": "utility/ui/ui.html",
+    "line": 892,
+    "tag": "h2",
+    "data-i18n": "orch.start.h"
+  },
+  {
+    "id": "voice:data-i18n:orch.start.a",
+    "file": "utility/ui/ui.html",
+    "line": 894,
+    "tag": "label",
+    "data-i18n": "orch.start.a"
+  },
+  {
+    "id": "voice:select",
+    "file": "utility/ui/ui.html",
+    "line": 894,
+    "tag": "select",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:orch.start.b",
+    "file": "utility/ui/ui.html",
+    "line": 895,
+    "tag": "label",
+    "data-i18n": "orch.start.b"
+  },
+  {
+    "id": "voice:select:2",
+    "file": "utility/ui/ui.html",
+    "line": 895,
+    "tag": "select",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:orch.start.topic",
+    "file": "utility/ui/ui.html",
+    "line": 897,
+    "tag": "label",
+    "data-i18n": "orch.start.topic"
+  },
+  {
+    "id": "voice:textarea",
+    "file": "utility/ui/ui.html",
+    "line": 898,
+    "tag": "textarea",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:orch.start.go",
+    "file": "utility/ui/ui.html",
+    "line": 899,
+    "tag": "button",
+    "data-i18n": "orch.start.go"
+  },
+  {
+    "id": "voice:data-fold:o-threads",
+    "file": "utility/ui/ui.html",
+    "line": 903,
+    "tag": "details",
+    "data-fold": "o-threads"
+  },
+  {
+    "id": "voice:summary:29",
+    "file": "utility/ui/ui.html",
+    "line": 904,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:orch.threads.h",
+    "file": "utility/ui/ui.html",
+    "line": 904,
+    "tag": "h2",
+    "data-i18n": "orch.threads.h"
+  },
+  {
+    "id": "voice:data-fold:o-feed",
+    "file": "utility/ui/ui.html",
+    "line": 907,
+    "tag": "details",
+    "data-fold": "o-feed"
+  },
+  {
+    "id": "voice:summary:30",
+    "file": "utility/ui/ui.html",
+    "line": 908,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:orch.feed.h",
+    "file": "utility/ui/ui.html",
+    "line": 908,
+    "tag": "h2",
+    "data-i18n": "orch.feed.h"
+  },
+  {
+    "id": "voice:id:orchChannelFilter",
+    "file": "utility/ui/ui.html",
+    "line": 909,
+    "tag": "select",
+    "control_id": "orchChannelFilter",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:o-opts",
+    "file": "utility/ui/ui.html",
+    "line": 912,
+    "tag": "details",
+    "data-fold": "o-opts"
+  },
+  {
+    "id": "voice:summary:31",
+    "file": "utility/ui/ui.html",
+    "line": 913,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:orch.opts.h",
+    "file": "utility/ui/ui.html",
+    "line": 913,
+    "tag": "h2",
+    "data-i18n": "orch.opts.h"
+  },
+  {
+    "id": "voice:label:8",
+    "file": "utility/ui/ui.html",
+    "line": 915,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:orch_hops_limit",
+    "file": "utility/ui/ui.html",
+    "line": 917,
+    "tag": "input",
+    "control_id": "orch_hops_limit",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:orch_max_hops",
+    "file": "utility/ui/ui.html",
+    "line": 918,
+    "tag": "input",
+    "control_id": "orch_max_hops",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:9",
+    "file": "utility/ui/ui.html",
+    "line": 922,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:orch_strip",
+    "file": "utility/ui/ui.html",
+    "line": 923,
+    "tag": "input",
+    "control_id": "orch_strip",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:orch.strip.list",
+    "file": "utility/ui/ui.html",
+    "line": 926,
+    "tag": "label",
+    "data-i18n": "orch.strip.list"
+  },
+  {
+    "id": "voice:id:orch_strip_greetings",
+    "file": "utility/ui/ui.html",
+    "line": 927,
+    "tag": "input",
+    "control_id": "orch_strip_greetings",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:10",
+    "file": "utility/ui/ui.html",
+    "line": 930,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:orch_require_transfer",
+    "file": "utility/ui/ui.html",
+    "line": 931,
+    "tag": "input",
+    "control_id": "orch_require_transfer",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:page-dictation",
+    "file": "utility/ui/ui.html",
+    "line": 936,
+    "tag": "section",
+    "control_id": "page-dictation"
+  },
+  {
+    "id": "voice:id:soundSection",
+    "file": "utility/ui/ui.html",
+    "line": 937,
+    "tag": "details",
+    "control_id": "soundSection",
+    "data-fold": "s.sound.mic"
+  },
+  {
+    "id": "voice:summary:32",
+    "file": "utility/ui/ui.html",
+    "line": 938,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:snd.mic.title",
+    "file": "utility/ui/ui.html",
+    "line": 938,
+    "tag": "h2",
+    "data-i18n": "snd.mic.title"
+  },
+  {
+    "id": "voice:label:11",
+    "file": "utility/ui/ui.html",
+    "line": 942,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:sound.mic.off",
+    "file": "utility/ui/ui.html",
+    "line": 944,
+    "tag": "button",
+    "data-act": "sound.mic.off",
+    "data-i18n": "snd.off",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.mic.mac",
+    "file": "utility/ui/ui.html",
+    "line": 945,
+    "tag": "button",
+    "data-act": "sound.mic.mac",
+    "data-i18n": "snd.mac",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:label:12",
+    "file": "utility/ui/ui.html",
+    "line": 950,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:sound.mic_mode.all",
+    "file": "utility/ui/ui.html",
+    "line": 952,
+    "tag": "button",
+    "data-act": "sound.mic_mode.all",
+    "data-i18n": "snd.mode.all",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.mic_mode.commands",
+    "file": "utility/ui/ui.html",
+    "line": 953,
+    "tag": "button",
+    "data-act": "sound.mic_mode.commands",
+    "data-i18n": "snd.mode.commands",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.mic_mode.speech",
+    "file": "utility/ui/ui.html",
+    "line": 991,
+    "tag": "button",
+    "data-act": "sound.mic_mode.speech",
+    "data-i18n": "snd.mode.speech",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:s.devices.in",
+    "file": "utility/ui/ui.html",
+    "line": 957,
+    "tag": "label",
+    "data-i18n": "s.devices.in"
+  },
+  {
+    "id": "voice:id:audio_in.mode",
+    "file": "utility/ui/ui.html",
+    "line": 959,
+    "tag": "select",
+    "control_id": "audio_in.mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:audio_in.name",
+    "file": "utility/ui/ui.html",
+    "line": 960,
+    "tag": "select",
+    "control_id": "audio_in.name",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.devices.phone_in",
+    "file": "utility/ui/ui.html",
+    "line": 965,
+    "tag": "label",
+    "data-i18n": "s.devices.phone_in"
+  },
+  {
+    "id": "voice:id:phone_input.mode",
+    "file": "utility/ui/ui.html",
+    "line": 967,
+    "tag": "select",
+    "control_id": "phone_input.mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:phone_input.name",
+    "file": "utility/ui/ui.html",
+    "line": 968,
+    "tag": "select",
+    "control_id": "phone_input.name",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:13",
+    "file": "utility/ui/ui.html",
+    "line": 974,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:sound.echo.auto",
+    "file": "utility/ui/ui.html",
+    "line": 976,
+    "tag": "button",
+    "data-act": "sound.echo.auto",
+    "data-i18n": "snd.echo.auto",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.echo.on",
+    "file": "utility/ui/ui.html",
+    "line": 977,
+    "tag": "button",
+    "data-act": "sound.echo.on",
+    "data-i18n": "snd.echo.on",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.echo.off",
+    "file": "utility/ui/ui.html",
+    "line": 978,
+    "tag": "button",
+    "data-act": "sound.echo.off",
+    "data-i18n": "snd.echo.off",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:snd.filter",
+    "file": "utility/ui/ui.html",
+    "line": 983,
+    "tag": "label",
+    "data-i18n": "snd.filter"
+  },
+  {
+    "id": "voice:id:echo_filter",
+    "file": "utility/ui/ui.html",
+    "line": 984,
+    "tag": "input",
+    "control_id": "echo_filter",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:snd.short_sound_stop",
+    "file": "utility/ui/ui.html",
+    "line": 987,
+    "tag": "label",
+    "data-i18n": "snd.short_sound_stop"
+  },
+  {
+    "id": "voice:id:short_sound_stop",
+    "file": "utility/ui/ui.html",
+    "line": 988,
+    "tag": "input",
+    "control_id": "short_sound_stop",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:14",
+    "file": "utility/ui/ui.html",
+    "line": 993,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:mute_while_playing",
+    "file": "utility/ui/ui.html",
+    "line": 994,
+    "tag": "input",
+    "control_id": "mute_while_playing",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.mic",
+    "file": "utility/ui/ui.html",
+    "line": 997,
+    "tag": "details",
+    "data-fold": "s.mic"
+  },
+  {
+    "id": "voice:summary:33",
+    "file": "utility/ui/ui.html",
+    "line": 998,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.details",
+    "file": "utility/ui/ui.html",
+    "line": 998,
+    "tag": "h2",
+    "data-i18n": "s.mic.details"
+  },
+  {
+    "id": "voice:data-i18n:dash.mic",
+    "file": "utility/ui/ui.html",
+    "line": 1001,
+    "tag": "label",
+    "data-i18n": "dash.mic"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.auto",
+    "file": "utility/ui/ui.html",
+    "line": 1011,
+    "tag": "label",
+    "data-i18n": "s.mic.auto"
+  },
+  {
+    "id": "voice:id:vad.auto_level",
+    "file": "utility/ui/ui.html",
+    "line": 1012,
+    "tag": "input",
+    "control_id": "vad.auto_level",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.level",
+    "file": "utility/ui/ui.html",
+    "line": 1015,
+    "tag": "label",
+    "data-i18n": "s.mic.level"
+  },
+  {
+    "id": "voice:id:vad.min_level",
+    "file": "utility/ui/ui.html",
+    "line": 1016,
+    "tag": "input",
+    "control_id": "vad.min_level",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.ratio",
+    "file": "utility/ui/ui.html",
+    "line": 1019,
+    "tag": "label",
+    "data-i18n": "s.mic.ratio"
+  },
+  {
+    "id": "voice:id:vad.start_ratio",
+    "file": "utility/ui/ui.html",
+    "line": 1020,
+    "tag": "input",
+    "control_id": "vad.start_ratio",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.silence",
+    "file": "utility/ui/ui.html",
+    "line": 1023,
+    "tag": "label",
+    "data-i18n": "s.mic.silence"
+  },
+  {
+    "id": "voice:id:vad.silence_ms",
+    "file": "utility/ui/ui.html",
+    "line": 1024,
+    "tag": "input",
+    "control_id": "vad.silence_ms",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.min",
+    "file": "utility/ui/ui.html",
+    "line": 1027,
+    "tag": "label",
+    "data-i18n": "s.mic.min"
+  },
+  {
+    "id": "voice:id:vad.min_speech_ms",
+    "file": "utility/ui/ui.html",
+    "line": 1028,
+    "tag": "input",
+    "control_id": "vad.min_speech_ms",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:vadDefaults",
+    "file": "utility/ui/ui.html",
+    "line": 1031,
+    "tag": "button",
+    "control_id": "vadDefaults",
+    "data-i18n": "s.mic.defaults"
+  },
+  {
+    "id": "voice:data-i18n:s.devices.gain_max",
+    "file": "utility/ui/ui.html",
+    "line": 1037,
+    "tag": "label",
+    "data-i18n": "s.devices.gain_max"
+  },
+  {
+    "id": "voice:id:phone_gain.max",
+    "file": "utility/ui/ui.html",
+    "line": 1038,
+    "tag": "input",
+    "control_id": "phone_gain.max",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.devices.gain_ratio",
+    "file": "utility/ui/ui.html",
+    "line": 1041,
+    "tag": "label",
+    "data-i18n": "s.devices.gain_ratio"
+  },
+  {
+    "id": "voice:id:phone_gain.ratio",
+    "file": "utility/ui/ui.html",
+    "line": 1042,
+    "tag": "input",
+    "control_id": "phone_gain.ratio",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.dictation",
+    "file": "utility/ui/ui.html",
+    "line": 1046,
+    "tag": "details",
+    "data-fold": "s.dictation"
+  },
+  {
+    "id": "voice:summary:34",
+    "file": "utility/ui/ui.html",
+    "line": 1047,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:m.dictation",
+    "file": "utility/ui/ui.html",
+    "line": 1047,
+    "tag": "h2",
+    "data-i18n": "m.dictation"
+  },
+  {
+    "id": "voice:label:15",
+    "file": "utility/ui/ui.html",
+    "line": 1049,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:dictation.off",
+    "file": "utility/ui/ui.html",
+    "line": 1051,
+    "tag": "button",
+    "data-act": "dictation.off",
+    "data-i18n": "m.off",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.whisper",
+    "file": "utility/ui/ui.html",
+    "line": 1052,
+    "tag": "button",
+    "data-act": "dictation.whisper",
+    "data-i18n": "m.whisper",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.openai",
+    "file": "utility/ui/ui.html",
+    "line": 1053,
+    "tag": "button",
+    "data-act": "dictation.openai",
+    "data-i18n": "m.openai",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.gigaam",
+    "file": "utility/ui/ui.html",
+    "line": 1054,
+    "tag": "button",
+    "data-act": "dictation.gigaam",
+    "data-i18n": "m.gigaam",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.apple",
+    "file": "utility/ui/ui.html",
+    "line": 1055,
+    "tag": "button",
+    "data-act": "dictation.apple",
+    "data-i18n": "m.apple",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.grok",
+    "file": "utility/ui/ui.html",
+    "line": 1056,
+    "tag": "button",
+    "data-act": "dictation.grok",
+    "data-i18n": "m.grok",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.gemini",
+    "file": "utility/ui/ui.html",
+    "line": 1057,
+    "tag": "button",
+    "data-act": "dictation.gemini",
+    "data-i18n": "m.gemini.dictation",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:dictation.zipa",
+    "file": "utility/ui/ui.html",
+    "line": 1058,
+    "tag": "button",
+    "data-act": "dictation.zipa",
+    "data-i18n": "m.zipa",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:s.whisper.model",
+    "file": "utility/ui/ui.html",
+    "line": 1065,
+    "tag": "label",
+    "data-i18n": "s.whisper.model"
+  },
+  {
+    "id": "voice:id:model",
+    "file": "utility/ui/ui.html",
+    "line": 1066,
+    "tag": "select",
+    "control_id": "model",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.whisper.lang",
+    "file": "utility/ui/ui.html",
+    "line": 1069,
+    "tag": "label",
+    "data-i18n": "s.whisper.lang"
+  },
+  {
+    "id": "voice:id:language_mode",
+    "file": "utility/ui/ui.html",
+    "line": 1070,
+    "tag": "select",
+    "control_id": "language_mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.fuzzy",
+    "file": "utility/ui/ui.html",
+    "line": 1076,
+    "tag": "label",
+    "data-i18n": "s.fuzzy"
+  },
+  {
+    "id": "voice:id:fuzzy_ear",
+    "file": "utility/ui/ui.html",
+    "line": 1077,
+    "tag": "input",
+    "control_id": "fuzzy_ear",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.fuzzy.limit",
+    "file": "utility/ui/ui.html",
+    "line": 1080,
+    "tag": "label",
+    "data-i18n": "s.fuzzy.limit"
+  },
+  {
+    "id": "voice:id:fuzzy_threshold",
+    "file": "utility/ui/ui.html",
+    "line": 1081,
+    "tag": "input",
+    "control_id": "fuzzy_threshold",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:16",
+    "file": "utility/ui/ui.html",
+    "line": 1086,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:grok_format",
+    "file": "utility/ui/ui.html",
+    "line": 1087,
+    "tag": "input",
+    "control_id": "grok_format",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:17",
+    "file": "utility/ui/ui.html",
+    "line": 1092,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:keyword_mode",
+    "file": "utility/ui/ui.html",
+    "line": 1093,
+    "tag": "input",
+    "control_id": "keyword_mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:18",
+    "file": "utility/ui/ui.html",
+    "line": 1096,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_mode",
+    "file": "utility/ui/ui.html",
+    "line": 1097,
+    "tag": "select",
+    "control_id": "apple_mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:19",
+    "file": "utility/ui/ui.html",
+    "line": 1104,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_live_every_s",
+    "file": "utility/ui/ui.html",
+    "line": 1105,
+    "tag": "input",
+    "control_id": "apple_live_every_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:20",
+    "file": "utility/ui/ui.html",
+    "line": 1108,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_stable_lag_s",
+    "file": "utility/ui/ui.html",
+    "line": 1109,
+    "tag": "input",
+    "control_id": "apple_stable_lag_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:21",
+    "file": "utility/ui/ui.html",
+    "line": 1112,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_hold_words",
+    "file": "utility/ui/ui.html",
+    "line": 1113,
+    "tag": "select",
+    "control_id": "apple_hold_words",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:22",
+    "file": "utility/ui/ui.html",
+    "line": 1118,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_punctuation",
+    "file": "utility/ui/ui.html",
+    "line": 1119,
+    "tag": "input",
+    "control_id": "apple_punctuation",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:23",
+    "file": "utility/ui/ui.html",
+    "line": 1122,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:apple_final_wait_s",
+    "file": "utility/ui/ui.html",
+    "line": 1123,
+    "tag": "input",
+    "control_id": "apple_final_wait_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.live.max",
+    "file": "utility/ui/ui.html",
+    "line": 1126,
+    "tag": "label",
+    "data-i18n": "s.live.max"
+  },
+  {
+    "id": "voice:id:live_max_minutes",
+    "file": "utility/ui/ui.html",
+    "line": 1127,
+    "tag": "select",
+    "control_id": "live_max_minutes",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.dictation.json",
+    "file": "utility/ui/ui.html",
+    "line": 1137,
+    "tag": "details",
+    "data-fold": "s.dictation.json"
+  },
+  {
+    "id": "voice:summary:35",
+    "file": "utility/ui/ui.html",
+    "line": 1138,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.dictation.json",
+    "file": "utility/ui/ui.html",
+    "line": 1138,
+    "tag": "h2",
+    "data-i18n": "s.dictation.json"
+  },
+  {
+    "id": "voice:label:24",
+    "file": "utility/ui/ui.html",
+    "line": 1188,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:zipa_json",
+    "file": "utility/ui/ui.html",
+    "line": 1189,
+    "tag": "input",
+    "control_id": "zipa_json",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:25",
+    "file": "utility/ui/ui.html",
+    "line": 1154,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:zipa_json_short",
+    "file": "utility/ui/ui.html",
+    "line": 1155,
+    "tag": "input",
+    "control_id": "zipa_json_short",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:26",
+    "file": "utility/ui/ui.html",
+    "line": 1158,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:zipa_backup",
+    "file": "utility/ui/ui.html",
+    "line": 1159,
+    "tag": "select",
+    "control_id": "zipa_backup",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:27",
+    "file": "utility/ui/ui.html",
+    "line": 1171,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:zipa_backup_commands",
+    "file": "utility/ui/ui.html",
+    "line": 1172,
+    "tag": "input",
+    "control_id": "zipa_backup_commands",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.zipa.rex_link",
+    "file": "utility/ui/ui.html",
+    "line": 1212,
+    "tag": "a",
+    "data-i18n": "s.zipa.rex_link",
+    "handler": "utility/ui/ui.html:data-goto commands, commands.dictation fold"
+  },
+  {
+    "id": "voice:data-fold:s.typing",
+    "file": "utility/ui/ui.html",
+    "line": 1175,
+    "tag": "details",
+    "data-fold": "s.typing"
+  },
+  {
+    "id": "voice:summary:36",
+    "file": "utility/ui/ui.html",
+    "line": 1176,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.typing.h",
+    "file": "utility/ui/ui.html",
+    "line": 1176,
+    "tag": "h2",
+    "data-i18n": "s.typing.h"
+  },
+  {
+    "id": "voice:data-i18n:s.typing.ignore",
+    "file": "utility/ui/ui.html",
+    "line": 1179,
+    "tag": "label",
+    "data-i18n": "s.typing.ignore"
+  },
+  {
+    "id": "voice:data-i18n:s.typing.max",
+    "file": "utility/ui/ui.html",
+    "line": 1183,
+    "tag": "label",
+    "data-i18n": "s.typing.max"
+  },
+  {
+    "id": "voice:id:vad.dictation_max_s",
+    "file": "utility/ui/ui.html",
+    "line": 1184,
+    "tag": "input",
+    "control_id": "vad.dictation_max_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:page-speech",
+    "file": "utility/ui/ui.html",
+    "line": 1190,
+    "tag": "section",
+    "control_id": "page-speech"
+  },
+  {
+    "id": "voice:id:speechSection",
+    "file": "utility/ui/ui.html",
+    "line": 1191,
+    "tag": "details",
+    "control_id": "speechSection",
+    "data-fold": "s.sound.speech"
+  },
+  {
+    "id": "voice:summary:37",
+    "file": "utility/ui/ui.html",
+    "line": 1192,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:snd.speech.title",
+    "file": "utility/ui/ui.html",
+    "line": 1192,
+    "tag": "h2",
+    "data-i18n": "snd.speech.title"
+  },
+  {
+    "id": "voice:label:28",
+    "file": "utility/ui/ui.html",
+    "line": 1196,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:sound.speech.off",
+    "file": "utility/ui/ui.html",
+    "line": 1198,
+    "tag": "button",
+    "data-act": "sound.speech.off",
+    "data-i18n": "snd.off",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:sound.speech.mac",
+    "file": "utility/ui/ui.html",
+    "line": 1199,
+    "tag": "button",
+    "data-act": "sound.speech.mac",
+    "data-i18n": "snd.mac",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:s.devices.out",
+    "file": "utility/ui/ui.html",
+    "line": 1204,
+    "tag": "label",
+    "data-i18n": "s.devices.out"
+  },
+  {
+    "id": "voice:id:audio_out.mode",
+    "file": "utility/ui/ui.html",
+    "line": 1206,
+    "tag": "select",
+    "control_id": "audio_out.mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:audio_out.name",
+    "file": "utility/ui/ui.html",
+    "line": 1207,
+    "tag": "select",
+    "control_id": "audio_out.name",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:snd.phone_out",
+    "file": "utility/ui/ui.html",
+    "line": 1211,
+    "tag": "label",
+    "data-i18n": "snd.phone_out"
+  },
+  {
+    "id": "voice:id:phone_output.mode",
+    "file": "utility/ui/ui.html",
+    "line": 1213,
+    "tag": "select",
+    "control_id": "phone_output.mode",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:phone_output.name",
+    "file": "utility/ui/ui.html",
+    "line": 1214,
+    "tag": "select",
+    "control_id": "phone_output.name",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.speak",
+    "file": "utility/ui/ui.html",
+    "line": 1219,
+    "tag": "details",
+    "data-fold": "s.speak"
+  },
+  {
+    "id": "voice:summary:38",
+    "file": "utility/ui/ui.html",
+    "line": 1220,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.details",
+    "file": "utility/ui/ui.html",
+    "line": 1220,
+    "tag": "h2",
+    "data-i18n": "s.speak.details"
+  },
+  {
+    "id": "voice:label:29",
+    "file": "utility/ui/ui.html",
+    "line": 1223,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:hold_while_dictating",
+    "file": "utility/ui/ui.html",
+    "line": 1224,
+    "tag": "input",
+    "control_id": "hold_while_dictating",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:30",
+    "file": "utility/ui/ui.html",
+    "line": 1227,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:queue_while_speaking",
+    "file": "utility/ui/ui.html",
+    "line": 1228,
+    "tag": "input",
+    "control_id": "queue_while_speaking",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:31",
+    "file": "utility/ui/ui.html",
+    "line": 1231,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:claude_interim",
+    "file": "utility/ui/ui.html",
+    "line": 1232,
+    "tag": "input",
+    "control_id": "claude_interim",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:32",
+    "file": "utility/ui/ui.html",
+    "line": 1235,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:codex_interim",
+    "file": "utility/ui/ui.html",
+    "line": 1236,
+    "tag": "input",
+    "control_id": "codex_interim",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:33",
+    "file": "utility/ui/ui.html",
+    "line": 1239,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:interim_speech_chars",
+    "file": "utility/ui/ui.html",
+    "line": 1240,
+    "tag": "input",
+    "control_id": "interim_speech_chars",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.interim_first_sentence",
+    "file": "utility/ui/ui.html",
+    "line": 1299,
+    "tag": "label",
+    "data-i18n": "s.speak.interim_first_sentence"
+  },
+  {
+    "id": "voice:id:interim_first_sentence",
+    "file": "utility/ui/ui.html",
+    "line": 1300,
+    "tag": "input",
+    "control_id": "interim_first_sentence",
+    "handler": "utility/core/app.py:apply_config"
+  },
+  {
+    "id": "voice:label:34",
+    "file": "utility/ui/ui.html",
+    "line": 1243,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:speech_tail_s",
+    "file": "utility/ui/ui.html",
+    "line": 1244,
+    "tag": "input",
+    "control_id": "speech_tail_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:35",
+    "file": "utility/ui/ui.html",
+    "line": 1247,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:listen_after_signal",
+    "file": "utility/ui/ui.html",
+    "line": 1248,
+    "tag": "input",
+    "control_id": "listen_after_signal",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:36",
+    "file": "utility/ui/ui.html",
+    "line": 1251,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:read_scope",
+    "file": "utility/ui/ui.html",
+    "line": 1252,
+    "tag": "select",
+    "control_id": "read_scope",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.waiting",
+    "file": "utility/ui/ui.html",
+    "line": 1258,
+    "tag": "label",
+    "data-i18n": "s.speak.waiting"
+  },
+  {
+    "id": "voice:id:announce_waiting",
+    "file": "utility/ui/ui.html",
+    "line": 1259,
+    "tag": "input",
+    "control_id": "announce_waiting",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.max",
+    "file": "utility/ui/ui.html",
+    "line": 1262,
+    "tag": "label",
+    "data-i18n": "s.speak.max"
+  },
+  {
+    "id": "voice:id:max_speech_chars",
+    "file": "utility/ui/ui.html",
+    "line": 1263,
+    "tag": "input",
+    "control_id": "max_speech_chars",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:37",
+    "file": "utility/ui/ui.html",
+    "line": 1266,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:openai_playback",
+    "file": "utility/ui/ui.html",
+    "line": 1267,
+    "tag": "select",
+    "control_id": "openai_playback",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:38",
+    "file": "utility/ui/ui.html",
+    "line": 1270,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:gemini_playback",
+    "file": "utility/ui/ui.html",
+    "line": 1271,
+    "tag": "select",
+    "control_id": "gemini_playback",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.finish_phrase",
+    "file": "utility/ui/ui.html",
+    "line": 1274,
+    "tag": "label",
+    "data-i18n": "s.speak.finish_phrase"
+  },
+  {
+    "id": "voice:id:speech_finish_phrase",
+    "file": "utility/ui/ui.html",
+    "line": 1275,
+    "tag": "input",
+    "control_id": "speech_finish_phrase",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.cut",
+    "file": "utility/ui/ui.html",
+    "line": 1278,
+    "tag": "label",
+    "data-i18n": "s.speak.cut"
+  },
+  {
+    "id": "voice:id:say_cut",
+    "file": "utility/ui/ui.html",
+    "line": 1279,
+    "tag": "input",
+    "control_id": "say_cut",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.voice",
+    "file": "utility/ui/ui.html",
+    "line": 1282,
+    "tag": "details",
+    "data-fold": "s.voice"
+  },
+  {
+    "id": "voice:summary:39",
+    "file": "utility/ui/ui.html",
+    "line": 1283,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.primary",
+    "file": "utility/ui/ui.html",
+    "line": 1283,
+    "tag": "h2",
+    "data-i18n": "s.speak.primary"
+  },
+  {
+    "id": "voice:label:39",
+    "file": "utility/ui/ui.html",
+    "line": 1285,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:reading.system",
+    "file": "utility/ui/ui.html",
+    "line": 1287,
+    "tag": "button",
+    "data-act": "reading.system",
+    "data-i18n": "m.system",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:reading.openai",
+    "file": "utility/ui/ui.html",
+    "line": 1288,
+    "tag": "button",
+    "data-act": "reading.openai",
+    "data-i18n": "m.openai",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:reading.silero",
+    "file": "utility/ui/ui.html",
+    "line": 1289,
+    "tag": "button",
+    "data-act": "reading.silero",
+    "data-i18n": "m.silero",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:reading.grok",
+    "file": "utility/ui/ui.html",
+    "line": 1290,
+    "tag": "button",
+    "data-act": "reading.grok",
+    "data-i18n": "m.grok",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:reading.gemini",
+    "file": "utility/ui/ui.html",
+    "line": 1291,
+    "tag": "button",
+    "data-act": "reading.gemini",
+    "data-i18n": "m.gemini",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen",
+    "file": "utility/ui/ui.html",
+    "line": 1295,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.voice",
+    "file": "utility/ui/ui.html",
+    "line": 1297,
+    "tag": "label",
+    "data-i18n": "s.speak.voice"
+  },
+  {
+    "id": "voice:id:voice",
+    "file": "utility/ui/ui.html",
+    "line": 1298,
+    "tag": "select",
+    "control_id": "voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:2",
+    "file": "utility/ui/ui.html",
+    "line": 1298,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.silero",
+    "file": "utility/ui/ui.html",
+    "line": 1301,
+    "tag": "label",
+    "data-i18n": "s.speak.silero"
+  },
+  {
+    "id": "voice:id:silero_voice",
+    "file": "utility/ui/ui.html",
+    "line": 1302,
+    "tag": "select",
+    "control_id": "silero_voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:3",
+    "file": "utility/ui/ui.html",
+    "line": 1308,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:label:40",
+    "file": "utility/ui/ui.html",
+    "line": 1311,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:grok_voice",
+    "file": "utility/ui/ui.html",
+    "line": 1312,
+    "tag": "select",
+    "control_id": "grok_voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:4",
+    "file": "utility/ui/ui.html",
+    "line": 1320,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:label:41",
+    "file": "utility/ui/ui.html",
+    "line": 1323,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:oaTest",
+    "file": "utility/ui/ui.html",
+    "line": 1324,
+    "tag": "button",
+    "control_id": "oaTest",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.rate",
+    "file": "utility/ui/ui.html",
+    "line": 1327,
+    "tag": "label",
+    "data-i18n": "s.speak.rate"
+  },
+  {
+    "id": "voice:id:rate",
+    "file": "utility/ui/ui.html",
+    "line": 1328,
+    "tag": "input",
+    "control_id": "rate",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.voice.secondary",
+    "file": "utility/ui/ui.html",
+    "line": 1332,
+    "tag": "details",
+    "data-fold": "s.voice.secondary"
+  },
+  {
+    "id": "voice:summary:40",
+    "file": "utility/ui/ui.html",
+    "line": 1333,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.secondary",
+    "file": "utility/ui/ui.html",
+    "line": 1333,
+    "tag": "h2",
+    "data-i18n": "s.speak.secondary"
+  },
+  {
+    "id": "voice:label:42",
+    "file": "utility/ui/ui.html",
+    "line": 1335,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:secondary_reading",
+    "file": "utility/ui/ui.html",
+    "line": 1336,
+    "tag": "select",
+    "control_id": "secondary_reading",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:5",
+    "file": "utility/ui/ui.html",
+    "line": 1339,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.voice:2",
+    "file": "utility/ui/ui.html",
+    "line": 1341,
+    "tag": "label",
+    "data-i18n": "s.speak.voice"
+  },
+  {
+    "id": "voice:id:secondary_voice_mirror",
+    "file": "utility/ui/ui.html",
+    "line": 1342,
+    "tag": "select",
+    "control_id": "secondary_voice_mirror",
+    "data-mirror": "voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:6",
+    "file": "utility/ui/ui.html",
+    "line": 1342,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.silero:2",
+    "file": "utility/ui/ui.html",
+    "line": 1345,
+    "tag": "label",
+    "data-i18n": "s.speak.silero"
+  },
+  {
+    "id": "voice:id:secondary_silero_voice_mirror",
+    "file": "utility/ui/ui.html",
+    "line": 1346,
+    "tag": "select",
+    "control_id": "secondary_silero_voice_mirror",
+    "data-mirror": "silero_voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:7",
+    "file": "utility/ui/ui.html",
+    "line": 1352,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:label:43",
+    "file": "utility/ui/ui.html",
+    "line": 1355,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:secondary_grok_voice_mirror",
+    "file": "utility/ui/ui.html",
+    "line": 1356,
+    "tag": "select",
+    "control_id": "secondary_grok_voice_mirror",
+    "data-mirror": "grok_voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:8",
+    "file": "utility/ui/ui.html",
+    "line": 1364,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:label:44",
+    "file": "utility/ui/ui.html",
+    "line": 1367,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.listen:9",
+    "file": "utility/ui/ui.html",
+    "line": 1368,
+    "tag": "button",
+    "data-i18n": "s.speak.listen"
+  },
+  {
+    "id": "voice:data-i18n:s.speak.rate:2",
+    "file": "utility/ui/ui.html",
+    "line": 1371,
+    "tag": "label",
+    "data-i18n": "s.speak.rate"
+  },
+  {
+    "id": "voice:id:secondary_rate_mirror",
+    "file": "utility/ui/ui.html",
+    "line": 1372,
+    "tag": "input",
+    "control_id": "secondary_rate_mirror",
+    "data-mirror": "rate",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:page-general",
+    "file": "utility/ui/ui.html",
+    "line": 1380,
+    "tag": "section",
+    "control_id": "page-general"
+  },
+  {
+    "id": "voice:data-fold:s.signals",
+    "file": "utility/ui/ui.html",
+    "line": 1381,
+    "tag": "details",
+    "data-fold": "s.signals"
+  },
+  {
+    "id": "voice:summary:41",
+    "file": "utility/ui/ui.html",
+    "line": 1382,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.signals.h",
+    "file": "utility/ui/ui.html",
+    "line": 1382,
+    "tag": "h2",
+    "data-i18n": "s.signals.h"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.sounds",
+    "file": "utility/ui/ui.html",
+    "line": 1387,
+    "tag": "label",
+    "data-i18n": "s.misc.sounds"
+  },
+  {
+    "id": "voice:id:sounds",
+    "file": "utility/ui/ui.html",
+    "line": 1388,
+    "tag": "input",
+    "control_id": "sounds",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.text_sound",
+    "file": "utility/ui/ui.html",
+    "line": 1391,
+    "tag": "label",
+    "data-i18n": "s.misc.text_sound"
+  },
+  {
+    "id": "voice:id:text_sound",
+    "file": "utility/ui/ui.html",
+    "line": 1392,
+    "tag": "input",
+    "control_id": "text_sound",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.signals.work_tick",
+    "file": "utility/ui/ui.html",
+    "line": 1396,
+    "tag": "label",
+    "data-i18n": "s.signals.work_tick"
+  },
+  {
+    "id": "voice:id:work_tick",
+    "file": "utility/ui/ui.html",
+    "line": 1397,
+    "tag": "input",
+    "control_id": "work_tick",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.signals.work_tick_s",
+    "file": "utility/ui/ui.html",
+    "line": 1400,
+    "tag": "label",
+    "data-i18n": "s.signals.work_tick_s"
+  },
+  {
+    "id": "voice:id:work_tick_s",
+    "file": "utility/ui/ui.html",
+    "line": 1401,
+    "tag": "input",
+    "control_id": "work_tick_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.signals.wake_sound",
+    "file": "utility/ui/ui.html",
+    "line": 1405,
+    "tag": "label",
+    "data-i18n": "s.signals.wake_sound"
+  },
+  {
+    "id": "voice:id:wake_sound",
+    "file": "utility/ui/ui.html",
+    "line": 1406,
+    "tag": "input",
+    "control_id": "wake_sound",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.signals.lib",
+    "file": "utility/ui/ui.html",
+    "line": 1413,
+    "tag": "label",
+    "data-i18n": "s.signals.lib"
+  },
+  {
+    "id": "voice:id:sigOpen",
+    "file": "utility/ui/ui.html",
+    "line": 1414,
+    "tag": "button",
+    "control_id": "sigOpen",
+    "data-i18n": "s.signals.open"
+  },
+  {
+    "id": "voice:data-i18n:s.ps.sent",
+    "file": "utility/ui/ui.html",
+    "line": 1422,
+    "tag": "label",
+    "data-i18n": "s.ps.sent"
+  },
+  {
+    "id": "voice:id:phone_sounds.sent",
+    "file": "utility/ui/ui.html",
+    "line": 1423,
+    "tag": "input",
+    "control_id": "phone_sounds.sent",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:button:10",
+    "file": "utility/ui/ui.html",
+    "line": 1424,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:s.ps.text",
+    "file": "utility/ui/ui.html",
+    "line": 1427,
+    "tag": "label",
+    "data-i18n": "s.ps.text"
+  },
+  {
+    "id": "voice:id:phone_sounds.text",
+    "file": "utility/ui/ui.html",
+    "line": 1428,
+    "tag": "input",
+    "control_id": "phone_sounds.text",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:button:11",
+    "file": "utility/ui/ui.html",
+    "line": 1429,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:s.ps.enter",
+    "file": "utility/ui/ui.html",
+    "line": 1432,
+    "tag": "label",
+    "data-i18n": "s.ps.enter"
+  },
+  {
+    "id": "voice:id:phone_sounds.enter",
+    "file": "utility/ui/ui.html",
+    "line": 1433,
+    "tag": "input",
+    "control_id": "phone_sounds.enter",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:button:12",
+    "file": "utility/ui/ui.html",
+    "line": 1434,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:s.ps.clear",
+    "file": "utility/ui/ui.html",
+    "line": 1437,
+    "tag": "label",
+    "data-i18n": "s.ps.clear"
+  },
+  {
+    "id": "voice:id:phone_sounds.clear",
+    "file": "utility/ui/ui.html",
+    "line": 1438,
+    "tag": "input",
+    "control_id": "phone_sounds.clear",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:button:13",
+    "file": "utility/ui/ui.html",
+    "line": 1439,
+    "tag": "button"
+  },
+  {
+    "id": "voice:data-i18n:s.ps.beep",
+    "file": "utility/ui/ui.html",
+    "line": 1442,
+    "tag": "label",
+    "data-i18n": "s.ps.beep"
+  },
+  {
+    "id": "voice:id:phone_sounds.beep",
+    "file": "utility/ui/ui.html",
+    "line": 1443,
+    "tag": "input",
+    "control_id": "phone_sounds.beep",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:s.misc",
+    "file": "utility/ui/ui.html",
+    "line": 1447,
+    "tag": "details",
+    "data-fold": "s.misc"
+  },
+  {
+    "id": "voice:summary:42",
+    "file": "utility/ui/ui.html",
+    "line": 1448,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.h",
+    "file": "utility/ui/ui.html",
+    "line": 1448,
+    "tag": "h2",
+    "data-i18n": "s.misc.h"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.debug_log",
+    "file": "utility/ui/ui.html",
+    "line": 1453,
+    "tag": "label",
+    "data-i18n": "s.misc.debug_log"
+  },
+  {
+    "id": "voice:id:debug_log",
+    "file": "utility/ui/ui.html",
+    "line": 1454,
+    "tag": "input",
+    "control_id": "debug_log",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.audio_diagnostics",
+    "file": "utility/ui/ui.html",
+    "line": 1457,
+    "tag": "label",
+    "data-i18n": "s.misc.audio_diagnostics"
+  },
+  {
+    "id": "voice:id:audio_diagnostics",
+    "file": "utility/ui/ui.html",
+    "line": 1458,
+    "tag": "input",
+    "control_id": "audio_diagnostics",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.badge",
+    "file": "utility/ui/ui.html",
+    "line": 1464,
+    "tag": "label",
+    "data-i18n": "s.misc.badge"
+  },
+  {
+    "id": "voice:id:badge",
+    "file": "utility/ui/ui.html",
+    "line": 1465,
+    "tag": "input",
+    "control_id": "badge",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.badge_label",
+    "file": "utility/ui/ui.html",
+    "line": 1468,
+    "tag": "label",
+    "data-i18n": "s.misc.badge_label"
+  },
+  {
+    "id": "voice:id:badge_label",
+    "file": "utility/ui/ui.html",
+    "line": 1469,
+    "tag": "input",
+    "control_id": "badge_label",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.poll",
+    "file": "utility/ui/ui.html",
+    "line": 1472,
+    "tag": "label",
+    "data-i18n": "s.misc.poll"
+  },
+  {
+    "id": "voice:id:poll_seconds",
+    "file": "utility/ui/ui.html",
+    "line": 1473,
+    "tag": "input",
+    "control_id": "poll_seconds",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:45",
+    "file": "utility/ui/ui.html",
+    "line": 1476,
+    "tag": "label"
+  },
+  {
+    "id": "voice:data-act:grant",
+    "file": "utility/ui/ui.html",
+    "line": 1477,
+    "tag": "button",
+    "data-act": "grant",
+    "data-i18n": "s.term.grant",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:label:46",
+    "file": "utility/ui/ui.html",
+    "line": 1485,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:grok_auth",
+    "file": "utility/ui/ui.html",
+    "line": 1486,
+    "tag": "select",
+    "control_id": "grok_auth",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:47",
+    "file": "utility/ui/ui.html",
+    "line": 1492,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:grok_api_key",
+    "file": "utility/ui/ui.html",
+    "line": 1493,
+    "tag": "input",
+    "control_id": "grok_api_key",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:48",
+    "file": "utility/ui/ui.html",
+    "line": 1496,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:gemini_auth",
+    "file": "utility/ui/ui.html",
+    "line": 1497,
+    "tag": "select",
+    "control_id": "gemini_auth",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:49",
+    "file": "utility/ui/ui.html",
+    "line": 1503,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:gemini_api_key",
+    "file": "utility/ui/ui.html",
+    "line": 1504,
+    "tag": "input",
+    "control_id": "gemini_api_key",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:50",
+    "file": "utility/ui/ui.html",
+    "line": 1507,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:openai_auth",
+    "file": "utility/ui/ui.html",
+    "line": 1508,
+    "tag": "select",
+    "control_id": "openai_auth",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:51",
+    "file": "utility/ui/ui.html",
+    "line": 1514,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:openai_api_key",
+    "file": "utility/ui/ui.html",
+    "line": 1515,
+    "tag": "input",
+    "control_id": "openai_api_key",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:52",
+    "file": "utility/ui/ui.html",
+    "line": 1518,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:openai_voice",
+    "file": "utility/ui/ui.html",
+    "line": 1519,
+    "tag": "select",
+    "control_id": "openai_voice",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:details:6",
+    "file": "utility/ui/ui.html",
+    "line": 1528,
+    "tag": "details"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.advanced",
+    "file": "utility/ui/ui.html",
+    "line": 1529,
+    "tag": "summary",
+    "data-i18n": "s.misc.advanced"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.wport",
+    "file": "utility/ui/ui.html",
+    "line": 1531,
+    "tag": "label",
+    "data-i18n": "s.misc.wport"
+  },
+  {
+    "id": "voice:id:whisper_port",
+    "file": "utility/ui/ui.html",
+    "line": 1532,
+    "tag": "input",
+    "control_id": "whisper_port",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.lib",
+    "file": "utility/ui/ui.html",
+    "line": 1535,
+    "tag": "label",
+    "data-i18n": "s.misc.lib"
+  },
+  {
+    "id": "voice:id:lib_dir",
+    "file": "utility/ui/ui.html",
+    "line": 1536,
+    "tag": "input",
+    "control_id": "lib_dir",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.misc.sport",
+    "file": "utility/ui/ui.html",
+    "line": 1539,
+    "tag": "label",
+    "data-i18n": "s.misc.sport"
+  },
+  {
+    "id": "voice:id:settings_port",
+    "file": "utility/ui/ui.html",
+    "line": 1540,
+    "tag": "input",
+    "control_id": "settings_port",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:page-terminals",
+    "file": "utility/ui/ui.html",
+    "line": 1612,
+    "tag": "section",
+    "control_id": "page-terminals"
+  },
+  {
+    "id": "voice:data-fold:s.term",
+    "file": "utility/ui/ui.html",
+    "line": 1613,
+    "tag": "details",
+    "data-fold": "s.term"
+  },
+  {
+    "id": "voice:summary:43",
+    "file": "utility/ui/ui.html",
+    "line": 1614,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:s.term.h",
+    "file": "utility/ui/ui.html",
+    "line": 1614,
+    "tag": "h2",
+    "data-i18n": "s.term.h"
+  },
+  {
+    "id": "voice:data-i18n:s.term.target",
+    "file": "utility/ui/ui.html",
+    "line": 1617,
+    "tag": "label",
+    "data-i18n": "s.term.target"
+  },
+  {
+    "id": "voice:id:target",
+    "file": "utility/ui/ui.html",
+    "line": 1618,
+    "tag": "select",
+    "control_id": "target",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:input_focus.title",
+    "file": "utility/ui/ui.html",
+    "line": 1629,
+    "tag": "label",
+    "handler": "utility/ui/ui.html:/api/input-focus"
+  },
+  {
+    "id": "voice:id:inputFocusSelect",
+    "file": "utility/ui/ui.html",
+    "line": 1630,
+    "tag": "select",
+    "control_id": "inputFocusSelect",
+    "handler": "utility/ui/ui.html:/api/input-focus"
+  },
+  {
+    "id": "voice:data-i18n:input_focus.name",
+    "file": "utility/ui/ui.html",
+    "line": 1634,
+    "tag": "label",
+    "handler": "utility/ui/ui.html:/api/input-focus"
+  },
+  {
+    "id": "voice:id:inputFocusName",
+    "file": "utility/ui/ui.html",
+    "line": 1636,
+    "tag": "input",
+    "control_id": "inputFocusName",
+    "handler": "utility/ui/ui.html:/api/input-focus"
+  },
+  {
+    "id": "voice:id:inputFocusNameSave",
+    "file": "utility/ui/ui.html",
+    "line": 1637,
+    "tag": "button",
+    "control_id": "inputFocusNameSave",
+    "data-i18n": "input_focus.name_save",
+    "handler": "utility/ui/ui.html:/api/input-focus"
+  },
+  {
+    "id": "voice:label:53",
+    "file": "utility/ui/ui.html",
+    "line": 1641,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:type_in_background",
+    "file": "utility/ui/ui.html",
+    "line": 1643,
+    "tag": "input",
+    "control_id": "type_in_background",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:54",
+    "file": "utility/ui/ui.html",
+    "line": 1792,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:clear_all_at_once",
+    "file": "utility/ui/ui.html",
+    "line": 1793,
+    "tag": "input",
+    "control_id": "clear_all_at_once",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:55",
+    "file": "utility/ui/ui.html",
+    "line": 1639,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:type_to_previous",
+    "file": "utility/ui/ui.html",
+    "line": 1640,
+    "tag": "input",
+    "control_id": "type_to_previous",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:page-details",
+    "file": "utility/ui/ui.html",
+    "line": 1580,
+    "tag": "section",
+    "control_id": "page-details"
+  },
+  {
+    "id": "voice:data-fold:d-log",
+    "file": "utility/ui/ui.html",
+    "line": 1581,
+    "tag": "details",
+    "data-fold": "d-log"
+  },
+  {
+    "id": "voice:summary:44",
+    "file": "utility/ui/ui.html",
+    "line": 1582,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:dash.log",
+    "file": "utility/ui/ui.html",
+    "line": 1582,
+    "tag": "h2",
+    "data-i18n": "dash.log"
+  },
+  {
+    "id": "voice:data-act:log_full",
+    "file": "utility/ui/ui.html",
+    "line": 1585,
+    "tag": "button",
+    "data-act": "log_full",
+    "data-i18n": "log.full",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:id:logExpand",
+    "file": "utility/ui/ui.html",
+    "line": 1586,
+    "tag": "button",
+    "control_id": "logExpand"
+  },
+  {
+    "id": "voice:data-fold:d-snd.override.h",
+    "file": "utility/ui/ui.html",
+    "line": 1591,
+    "tag": "details",
+    "data-fold": "d-snd.override.h"
+  },
+  {
+    "id": "voice:summary:45",
+    "file": "utility/ui/ui.html",
+    "line": 1592,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:snd.override.h",
+    "file": "utility/ui/ui.html",
+    "line": 1592,
+    "tag": "h2",
+    "data-i18n": "snd.override.h"
+  },
+  {
+    "id": "voice:data-i18n:snd.override.mac",
+    "file": "utility/ui/ui.html",
+    "line": 1595,
+    "tag": "label",
+    "data-i18n": "snd.override.mac"
+  },
+  {
+    "id": "voice:id:mac_output_kind",
+    "file": "utility/ui/ui.html",
+    "line": 1596,
+    "tag": "select",
+    "control_id": "mac_output_kind",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:testsLast",
+    "file": "utility/ui/ui.html",
+    "line": 1605,
+    "tag": "section",
+    "control_id": "testsLast"
+  },
+  {
+    "id": "voice:id:testsReportTop",
+    "file": "utility/ui/ui.html",
+    "line": 1607,
+    "tag": "button",
+    "control_id": "testsReportTop",
+    "data-i18n": "tests.report.btn"
+  },
+  {
+    "id": "voice:data-fold:d-tests.comparison",
+    "file": "utility/ui/ui.html",
+    "line": 1609,
+    "tag": "details",
+    "data-fold": "d-tests.comparison"
+  },
+  {
+    "id": "voice:summary:46",
+    "file": "utility/ui/ui.html",
+    "line": 1610,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.comparison.h",
+    "file": "utility/ui/ui.html",
+    "line": 1610,
+    "tag": "h2",
+    "data-i18n": "tests.comparison.h"
+  },
+  {
+    "id": "voice:data-i18n:tests.comparison.round2",
+    "file": "utility/ui/ui.html",
+    "line": 1612,
+    "tag": "label",
+    "data-i18n": "tests.comparison.round2"
+  },
+  {
+    "id": "voice:data-act:benchmark_report.round2",
+    "file": "utility/ui/ui.html",
+    "line": 1613,
+    "tag": "button",
+    "data-act": "benchmark_report.round2",
+    "data-i18n": "tests.report.btn",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:tests.comparison.audio",
+    "file": "utility/ui/ui.html",
+    "line": 1617,
+    "tag": "label",
+    "data-i18n": "tests.comparison.audio"
+  },
+  {
+    "id": "voice:data-act:benchmark_report.audio",
+    "file": "utility/ui/ui.html",
+    "line": 1618,
+    "tag": "button",
+    "data-act": "benchmark_report.audio",
+    "data-i18n": "tests.report.btn",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:tests.comparison.models",
+    "file": "utility/ui/ui.html",
+    "line": 1621,
+    "tag": "label",
+    "data-i18n": "tests.comparison.models"
+  },
+  {
+    "id": "voice:data-act:benchmark_report.models",
+    "file": "utility/ui/ui.html",
+    "line": 1622,
+    "tag": "button",
+    "data-act": "benchmark_report.models",
+    "data-i18n": "tests.report.btn",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-i18n:tests.comparison.hybrid",
+    "file": "utility/ui/ui.html",
+    "line": 1625,
+    "tag": "label",
+    "data-i18n": "tests.comparison.hybrid"
+  },
+  {
+    "id": "voice:data-act:benchmark_report.hybrid",
+    "file": "utility/ui/ui.html",
+    "line": 1626,
+    "tag": "button",
+    "data-act": "benchmark_report.hybrid",
+    "data-i18n": "tests.report.btn",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-fold:d-tests.rec.h",
+    "file": "utility/ui/ui.html",
+    "line": 1629,
+    "tag": "details",
+    "data-fold": "d-tests.rec.h"
+  },
+  {
+    "id": "voice:summary:47",
+    "file": "utility/ui/ui.html",
+    "line": 1630,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.rec.h",
+    "file": "utility/ui/ui.html",
+    "line": 1630,
+    "tag": "h2",
+    "data-i18n": "tests.rec.h"
+  },
+  {
+    "id": "voice:data-fold:d-tests.stt.h",
+    "file": "utility/ui/ui.html",
+    "line": 1634,
+    "tag": "details",
+    "data-fold": "d-tests.stt.h"
+  },
+  {
+    "id": "voice:summary:48",
+    "file": "utility/ui/ui.html",
+    "line": 1635,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.stt.h",
+    "file": "utility/ui/ui.html",
+    "line": 1635,
+    "tag": "h2",
+    "data-i18n": "tests.stt.h"
+  },
+  {
+    "id": "voice:label:56",
+    "file": "utility/ui/ui.html",
+    "line": 1638,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.whisper",
+    "file": "utility/ui/ui.html",
+    "line": 1638,
+    "tag": "input",
+    "control_id": "tests.stt.whisper",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:57",
+    "file": "utility/ui/ui.html",
+    "line": 1639,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.gigaam",
+    "file": "utility/ui/ui.html",
+    "line": 1639,
+    "tag": "input",
+    "control_id": "tests.stt.gigaam",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:58",
+    "file": "utility/ui/ui.html",
+    "line": 1640,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.zipa",
+    "file": "utility/ui/ui.html",
+    "line": 1640,
+    "tag": "input",
+    "control_id": "tests.stt.zipa",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:59",
+    "file": "utility/ui/ui.html",
+    "line": 1641,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.apple",
+    "file": "utility/ui/ui.html",
+    "line": 1641,
+    "tag": "input",
+    "control_id": "tests.stt.apple",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:60",
+    "file": "utility/ui/ui.html",
+    "line": 1642,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.grok",
+    "file": "utility/ui/ui.html",
+    "line": 1642,
+    "tag": "input",
+    "control_id": "tests.stt.grok",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:61",
+    "file": "utility/ui/ui.html",
+    "line": 1643,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.openai",
+    "file": "utility/ui/ui.html",
+    "line": 1643,
+    "tag": "input",
+    "control_id": "tests.stt.openai",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:62",
+    "file": "utility/ui/ui.html",
+    "line": 1644,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.stt.live",
+    "file": "utility/ui/ui.html",
+    "line": 1644,
+    "tag": "input",
+    "control_id": "tests.stt.live",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:d-tests.voices.h",
+    "file": "utility/ui/ui.html",
+    "line": 1647,
+    "tag": "details",
+    "data-fold": "d-tests.voices.h"
+  },
+  {
+    "id": "voice:summary:49",
+    "file": "utility/ui/ui.html",
+    "line": 1648,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.voices.h",
+    "file": "utility/ui/ui.html",
+    "line": 1648,
+    "tag": "h2",
+    "data-i18n": "tests.voices.h"
+  },
+  {
+    "id": "voice:label:63",
+    "file": "utility/ui/ui.html",
+    "line": 1651,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.voices.me",
+    "file": "utility/ui/ui.html",
+    "line": 1651,
+    "tag": "input",
+    "control_id": "tests.voices.me",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:64",
+    "file": "utility/ui/ui.html",
+    "line": 1652,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.voices.silero",
+    "file": "utility/ui/ui.html",
+    "line": 1652,
+    "tag": "input",
+    "control_id": "tests.voices.silero",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:65",
+    "file": "utility/ui/ui.html",
+    "line": 1653,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.voices.system",
+    "file": "utility/ui/ui.html",
+    "line": 1653,
+    "tag": "input",
+    "control_id": "tests.voices.system",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:66",
+    "file": "utility/ui/ui.html",
+    "line": 1654,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.voices.grok",
+    "file": "utility/ui/ui.html",
+    "line": 1654,
+    "tag": "input",
+    "control_id": "tests.voices.grok",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:67",
+    "file": "utility/ui/ui.html",
+    "line": 1655,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.voices.openai",
+    "file": "utility/ui/ui.html",
+    "line": 1655,
+    "tag": "input",
+    "control_id": "tests.voices.openai",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:testsSynth",
+    "file": "utility/ui/ui.html",
+    "line": 1658,
+    "tag": "button",
+    "control_id": "testsSynth",
+    "data-i18n": "tests.synth.btn"
+  },
+  {
+    "id": "voice:id:testsSynthRedo",
+    "file": "utility/ui/ui.html",
+    "line": 1659,
+    "tag": "button",
+    "control_id": "testsSynthRedo",
+    "data-i18n": "tests.synth.redo"
+  },
+  {
+    "id": "voice:data-fold:d-tests.kinds.h",
+    "file": "utility/ui/ui.html",
+    "line": 1662,
+    "tag": "details",
+    "data-fold": "d-tests.kinds.h"
+  },
+  {
+    "id": "voice:summary:50",
+    "file": "utility/ui/ui.html",
+    "line": 1663,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.kinds.h",
+    "file": "utility/ui/ui.html",
+    "line": 1663,
+    "tag": "h2",
+    "data-i18n": "tests.kinds.h"
+  },
+  {
+    "id": "voice:label:68",
+    "file": "utility/ui/ui.html",
+    "line": 1665,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.kinds.phrase",
+    "file": "utility/ui/ui.html",
+    "line": 1665,
+    "tag": "input",
+    "control_id": "tests.kinds.phrase",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:69",
+    "file": "utility/ui/ui.html",
+    "line": 1666,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.kinds.phrase%2Bcommand",
+    "file": "utility/ui/ui.html",
+    "line": 1666,
+    "tag": "input",
+    "control_id": "tests.kinds.phrase+command",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:70",
+    "file": "utility/ui/ui.html",
+    "line": 1667,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.kinds.command",
+    "file": "utility/ui/ui.html",
+    "line": 1667,
+    "tag": "input",
+    "control_id": "tests.kinds.command",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:71",
+    "file": "utility/ui/ui.html",
+    "line": 1668,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.kinds.paragraph",
+    "file": "utility/ui/ui.html",
+    "line": 1668,
+    "tag": "input",
+    "control_id": "tests.kinds.paragraph",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:label:72",
+    "file": "utility/ui/ui.html",
+    "line": 1669,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.kinds.paragraph%2Bcommand",
+    "file": "utility/ui/ui.html",
+    "line": 1669,
+    "tag": "input",
+    "control_id": "tests.kinds.paragraph+command",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:d-tests.run.h",
+    "file": "utility/ui/ui.html",
+    "line": 1672,
+    "tag": "details",
+    "data-fold": "d-tests.run.h"
+  },
+  {
+    "id": "voice:summary:51",
+    "file": "utility/ui/ui.html",
+    "line": 1673,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:tests.run.h",
+    "file": "utility/ui/ui.html",
+    "line": 1673,
+    "tag": "h2",
+    "data-i18n": "tests.run.h"
+  },
+  {
+    "id": "voice:label:73",
+    "file": "utility/ui/ui.html",
+    "line": 1676,
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:tests.repeats",
+    "file": "utility/ui/ui.html",
+    "line": 1677,
+    "tag": "select",
+    "control_id": "tests.repeats",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:id:testsRun",
+    "file": "utility/ui/ui.html",
+    "line": 1679,
+    "tag": "button",
+    "control_id": "testsRun",
+    "data-i18n": "tests.run.btn"
+  },
+  {
+    "id": "voice:id:testsReport",
+    "file": "utility/ui/ui.html",
+    "line": 1680,
+    "tag": "button",
+    "control_id": "testsReport",
+    "data-i18n": "tests.report.btn"
+  },
+  {
+    "id": "voice:id:page-commands",
+    "file": "utility/ui/ui.html",
+    "line": 1686,
+    "tag": "section",
+    "control_id": "page-commands"
+  },
+  {
+    "id": "voice:data-fold:d-controls",
+    "file": "utility/ui/ui.html",
+    "line": 1687,
+    "tag": "details",
+    "data-fold": "d-controls"
+  },
+  {
+    "id": "voice:summary:52",
+    "file": "utility/ui/ui.html",
+    "line": 1688,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:dash.controls",
+    "file": "utility/ui/ui.html",
+    "line": 1688,
+    "tag": "h2",
+    "data-i18n": "dash.controls"
+  },
+  {
+    "id": "voice:data-act:hush:2",
+    "file": "utility/ui/ui.html",
+    "line": 1691,
+    "tag": "button",
+    "data-act": "hush",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:space",
+    "file": "utility/ui/ui.html",
+    "line": 1692,
+    "tag": "button",
+    "data-act": "space",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:enter",
+    "file": "utility/ui/ui.html",
+    "line": 1693,
+    "tag": "button",
+    "data-act": "enter",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-act:switch",
+    "file": "utility/ui/ui.html",
+    "line": 1694,
+    "tag": "button",
+    "data-act": "switch",
+    "handler": "utility/core/app.py:action dispatch"
+  },
+  {
+    "id": "voice:data-fold:commands.dictation",
+    "file": "utility/ui/ui.html",
+    "line": 1700,
+    "tag": "details",
+    "data-fold": "commands.dictation"
+  },
+  {
+    "id": "voice:summary:53",
+    "file": "utility/ui/ui.html",
+    "line": 1701,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:commands.dictation",
+    "file": "utility/ui/ui.html",
+    "line": 1701,
+    "tag": "h2",
+    "data-i18n": "commands.dictation"
+  },
+  {
+    "id": "voice:data-i18n:commands.rex.position",
+    "file": "utility/ui/ui.html",
+    "line": 1703,
+    "tag": "label",
+    "data-i18n": "commands.rex.position"
+  },
+  {
+    "id": "voice:id:backup_rex_position",
+    "file": "utility/ui/ui.html",
+    "line": 1704,
+    "tag": "select",
+    "control_id": "backup_rex_position",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.mincmd",
+    "file": "utility/ui/ui.html",
+    "line": 1710,
+    "tag": "label",
+    "data-i18n": "s.mic.mincmd"
+  },
+  {
+    "id": "voice:id:vad.min_command_ms",
+    "file": "utility/ui/ui.html",
+    "line": 1711,
+    "tag": "input",
+    "control_id": "vad.min_command_ms",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.mic.max",
+    "file": "utility/ui/ui.html",
+    "line": 1714,
+    "tag": "label",
+    "data-i18n": "s.mic.max"
+  },
+  {
+    "id": "voice:id:vad.max_speech_s",
+    "file": "utility/ui/ui.html",
+    "line": 1715,
+    "tag": "input",
+    "control_id": "vad.max_speech_s",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-fold:commands.additional",
+    "file": "utility/ui/ui.html",
+    "line": 1718,
+    "tag": "details",
+    "data-fold": "commands.additional"
+  },
+  {
+    "id": "voice:summary:54",
+    "file": "utility/ui/ui.html",
+    "line": 1719,
+    "tag": "summary"
+  },
+  {
+    "id": "voice:data-i18n:commands.additional",
+    "file": "utility/ui/ui.html",
+    "line": 1719,
+    "tag": "h2",
+    "data-i18n": "commands.additional"
+  },
+  {
+    "id": "voice:data-i18n:s.cmds.max",
+    "file": "utility/ui/ui.html",
+    "line": 1721,
+    "tag": "label",
+    "data-i18n": "s.cmds.max"
+  },
+  {
+    "id": "voice:id:max_words",
+    "file": "utility/ui/ui.html",
+    "line": 1722,
+    "tag": "input",
+    "control_id": "max_words",
+    "handler": "utility/core/app.py:apply_config or explicit ui.html handler"
+  },
+  {
+    "id": "voice:data-i18n:s.cmds.min",
+    "file": "utility/ui/ui.html",
+    "line": 1726,
+    "tag": "label",
+    "data-i18n": "s.cmds.min"
+  },
+  {
+    "id": "voice:data-i18n:btn.change:4",
+    "file": "utility/ui/ui.html",
+    "line": 1727,
+    "tag": "button",
+    "data-i18n": "btn.change"
+  },
+  {
+    "id": "voice:label:ui_debug_icons",
+    "file": "utility/ui/ui.html",
+    "tag": "label"
+  },
+  {
+    "id": "voice:id:ui_debug_icons",
+    "file": "utility/ui/ui.html",
+    "tag": "input",
+    "control_id": "ui_debug_icons",
+    "handler": "utility/core/app.py:apply_config"
+  },
+  {
+    "id": "voice:id:media_controls.source",
+    "file": "utility/ui/ui.html",
+    "line": 1098,
+    "tag": "select",
+    "control_id": "media_controls.source"
+  },
+  {
+    "id": "voice:tab:devices",
+    "file": "utility/ui/ui.html",
+    "tag": "button"
+  },
+  {
+    "id": "voice:id:page-devices",
+    "file": "utility/ui/ui.html",
+    "tag": "section",
+    "control_id": "page-devices"
+  },
+  {
+    "id": "voice:tab:headset",
+    "file": "utility/ui/ui.html",
+    "tag": "button"
+  },
+  {
+    "id": "voice:id:page-headset",
+    "file": "utility/ui/ui.html",
+    "tag": "section",
+    "control_id": "page-headset"
+  },
+  {
+    "id": "voice:buttons:normal:volume_up",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_up_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_up_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_up_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_down",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_down_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_down_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:volume_down_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:play_pause",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:play_pause_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:play_pause_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:normal:play_pause_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_up",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_up_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_up_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_up_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_down",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_down_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_down_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:volume_down_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:play_pause",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:play_pause_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:play_pause_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:terminal:play_pause_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_up",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_up_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_up_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_up_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_down",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_down_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_down_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:volume_down_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:play_pause",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:play_pause_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:play_pause_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra1:play_pause_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_up",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_up_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_up_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_up_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_down",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_down_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_down_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:volume_down_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:play_pause",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:play_pause_double",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:play_pause_hold",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  },
+  {
+    "id": "voice:buttons:extra2:play_pause_hold_release",
+    "file": "utility/ui/button_editor.js",
+    "tag": "details"
+  }
+]

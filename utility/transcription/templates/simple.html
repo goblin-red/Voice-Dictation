@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title><style>
+body{max-width:1050px;margin:36px auto;padding:0 20px;color:#222;background:#fff;font:18px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+h1{font-size:24px;font-weight:600;margin:0 0 22px}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th{text-align:left;font-size:13px;font-weight:500;color:#777;padding:0 16px 10px 0}
+td{vertical-align:top;padding:16px 16px 16px 0;border-top:1px solid #e7e7e7;overflow-wrap:anywhere}
+th:first-child{width:95px}th:nth-child(2){width:40%}td:first-child{color:#777}.zipa{font-size:16px}
+tr.speaker-1{background:#eff6ff;color:#234e78}tr.speaker-2{background:#fff7ed;color:#85451b}
+tr.speaker-1 td:first-child{color:#1d64a6;border-left:4px solid #4285c5}tr.speaker-2 td:first-child{color:#a95716;border-left:4px solid #d78a45}
+tbody td:first-child{padding-left:12px;font-weight:600}
+@media(max-width:600px){body{font-size:16px;margin:22px auto;padding:0 12px}th:first-child{width:78px}td{padding-right:10px}.zipa{font-size:14px}}
+</style></head><body>
+<h1>{{TITLE}}</h1>
+<table><thead><tr><th>Speaker</th><th>Grok</th><th>ZIPA</th></tr></thead><tbody>
+{{ROWS}}
+</tbody></table>
+</body></html>

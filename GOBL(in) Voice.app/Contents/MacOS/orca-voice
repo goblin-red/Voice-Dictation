@@ -1,7 +1,0 @@
-#!/bin/sh
-# Запуск из Finder: PATH там пустой, поэтому задаём его сами (в том числе путь к команде orca)
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Orca.app/Contents/Resources/bin:$PATH"
-DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
-mkdir -p "$DIR/logs"
-cd "$DIR"
-exec "$DIR/.venv/bin/python" "$DIR/app.py" >> "$DIR/logs/stdout.log" 2>&1
